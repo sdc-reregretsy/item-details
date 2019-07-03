@@ -5,7 +5,7 @@ class App extends React.Component {
     super(props);
   }
   render() {
-    return <h1>Lets Get Started Baby</h1>;
+    return <h1>Regretsy Item Details Component</h1>;
   }
 }
 export default App;
