@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const axios = require("axios");
 const db = require("../database/index");
-// const data = require("../database/data");
+const data = require("../database/data");
 const port = 3001;
 
 const app = express();

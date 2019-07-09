@@ -8,5 +8,5 @@ CREATE TABLE items (
     listing_id BIGINT PRIMARY KEY,
     title VARCHAR(500),
     description TEXT,
-    price INT 
+    price DECIMAL(10,2) 
 );
