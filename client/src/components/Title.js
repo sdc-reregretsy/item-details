@@ -5,6 +5,6 @@ const Title = (props) => {
         <h1>Vintage Garden Book (1968)</h1>
         <h2>$16.00</h2>
     </div>;
-  }
+}
 
-  export default Title;
+export default Title;

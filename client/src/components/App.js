@@ -1,6 +1,6 @@
 import React from "react";
-import Title from "./components/title.js"
-import Details from "./components/details.js"
+import Title from "./Title.js"
+import Details from "./Details.js"
 
 class App extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class App extends React.Component {
   }
   render() {
     return <div>
-      <h1>Regretsy Item Details Component</h1>
+      <h1>RegrEtsy Item Details & Add to Cart Component</h1>
       <Title />
       <Details />
     </div>;

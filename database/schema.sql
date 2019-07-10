@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS items;
+DROP DATABASE IF EXISTS regretsy_items;
 
-CREATE DATABASE items;
+CREATE DATABASE regretsy_items;
 
-USE items;
+USE regretsy_items;
 
 CREATE TABLE items (
     listing_id BIGINT PRIMARY KEY,

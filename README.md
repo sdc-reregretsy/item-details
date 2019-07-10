@@ -19,12 +19,13 @@
 
 > Some usage instructions:
 > npm install
-> start server with following: npm run server
+> Start server with following: npm run server-dev
 > Navigate to site by going to localhost:3001 (port subject to change)
 
 ## Requirements
 
 - Node 6.13.0
+- etc
 
 ## Development
 
@@ -32,5 +33,5 @@
 
 From within the root directory:
 
-npm install -g webpack
 npm install
+npm install webpack
