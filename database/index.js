@@ -3,9 +3,9 @@ var connection = mysql.createConnection(require('../config.js'));
 
 connection.connect((err) => {
     if (err) {
-        console.log('database not connected, error: ', err);
+        console.log('Database not connected, error: ', err);
     } else {
-        console.log('database connected!');
+        console.log('Database connected!');
     }
 });
 
