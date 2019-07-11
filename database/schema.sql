@@ -10,3 +10,7 @@ CREATE TABLE items (
     description TEXT,
     price DECIMAL(10,2) 
 );
+
+-- Execute this file from the command line by typing:
+-- mysql -u root -p < schema.sql
+-- to create the database and the tables.
