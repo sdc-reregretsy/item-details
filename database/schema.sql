@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS regretsy_items;
 
 CREATE DATABASE regretsy_items;

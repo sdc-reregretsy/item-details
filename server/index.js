@@ -12,14 +12,16 @@ app.use(express.json());
 // Database has been seeded! Uncomment to seed DB again:
 // db.seedDB(data);
 
-app.get('/', (req, res) => {
-  res.send();
+app.get('/details/:id', (req, res) => {
+  db.retrieveItem(req.params.id, response => {
+    res.send(response);
+  });
 });
 
-app.post('/', (req, res) => {
-  res.end();
-});
+// app.post('/details', (req, res) => {
+//   res.end();
+// });
 
 app.listen(port, () => {
-  console.log(`Item Details Server listening on port ${port}`);
+  console.log(`Item Details server listening on port ${port}`);
 });
