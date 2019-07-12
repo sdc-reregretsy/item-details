@@ -156,7 +156,7 @@ class Listing extends React.Component {
 
   render() {
     return (
-      <div className='listingColumn'>
+      <div>
         <Container>
           <Row>
             <Col lg={8}>
