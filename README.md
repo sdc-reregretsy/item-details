@@ -4,10 +4,10 @@
 
 ## Related Projects
 
-  - https://github.com/regretsy-hratx42/item-details
-  - https://github.com/regretsy-hratx42/header-and-search
-  - https://github.com/regretsy-hratx42/image-carousel
-  - https://github.com/regretsy-hratx42/cnebs-reviews
+- https://github.com/regretsy-hratx42/item-details
+- https://github.com/regretsy-hratx42/header-and-search
+- https://github.com/regretsy-hratx42/image-carousel
+- https://github.com/regretsy-hratx42/cnebs-reviews
 
 ## Table of Contents
 
@@ -33,5 +33,5 @@
 
 From within the root directory:
 
-npm install
-npm install webpack
+> npm install
+> npm install webpack
