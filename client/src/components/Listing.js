@@ -18,6 +18,7 @@ class Listing extends React.Component {
       description:
         'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
       price: '16.00',
+      quantity: 1,
       seller: 'annielesperance',
       avgRating: 3
       // shippingInfo: ''
@@ -144,8 +145,10 @@ class Listing extends React.Component {
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
           description: response.data[0].description,
-          price: response.data[0].price
-          // shippingInfo: response.data[0].shipping_info
+          price: response.data[0].price,
+          quantity: response.data[0].quantity,
+          seller: response.data[0].seller,
+          avgRating: response.data[0].avgRating
         });
       })
       .catch(err => console.log('error in fetchItem: ', err));
@@ -156,13 +159,13 @@ class Listing extends React.Component {
       <div className='listingColumn'>
         <Container>
           <Row>
-            <Col md={8}>
+            <Col lg={8}>
               <Image
                 src='https://i.etsystatic.com/19866202/r/il/9db3c0/1981665817/il_fullxfull.1981665817_mjym.jpg'
                 fluid
               />
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <Title
                 seller={this.state.seller}
                 title={this.state.title}
