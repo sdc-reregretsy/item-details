@@ -9,14 +9,32 @@ connection.connect(err => {
   }
 });
 
-const seedDB = function(data) {
-  const inventory = data.data.results;
+const seedDBItems = function(data) {
+  const inventory = data.itemData.results;
   inventory.forEach(item => {
     connection.query(
       `INSERT INTO items (listing_id, title, description, price, quantity) VALUES (${
         item.listing_id
       }, "${item.title}", "${item.description}", "${item.price}", ${
         item.quantity
+      })`,
+      function(error, results) {
+        if (error) {
+          console.log('Error in seedDB: ', error);
+        } else {
+          console.log('DB seeded!');
+        }
+      }
+    );
+  });
+};
+
+const seedDBSellers = function(data) {
+  const sellers = data.sellerData;
+  sellers.forEach(seller => {
+    connection.query(
+      `INSERT INTO sellers (seller, avgRating) VALUES ("${seller.seller}", ${
+        seller.avgRating
       })`,
       function(error, results) {
         if (error) {
@@ -43,4 +61,4 @@ const retrieveItem = function(id, callback) {
   );
 };
 
-module.exports = { seedDB, retrieveItem };
+module.exports = { seedDBItems, seedDBSellers, retrieveItem };

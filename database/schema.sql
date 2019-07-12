@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS regretsy_items;
 
 CREATE DATABASE regretsy_items;
@@ -11,6 +10,13 @@ CREATE TABLE items (
     description TEXT,
     price VARCHAR(20),
     quantity INT
+    -- shipping_info VARCHAR(500),
+);
+
+CREATE TABLE sellers (
+    seller_id SERIAL PRIMARY KEY,
+    seller VARCHAR(500),
+    avgRating INT
 );
 
 -- Execute this file from the command line by typing:

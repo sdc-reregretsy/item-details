@@ -7,8 +7,7 @@ const Details = (props) => {
         <p className="description">{props.description}</p>
         <hr />
         <p className="shipping">Shipping & policies<br></br>
-            <p className="shippingInfo">Get it fast! Ready to ship in 1–2 business days.
-                From Kensington, MD<br></br>
+            <p className="shippingInfo">Get it fast! Ready to ship in 1–2 business days.<br></br>From Kensington, MD<br></br>
                 <a href="#">Get shipping cost</a><br></br><br></br>
                 <a href="#">View shop policies</a></p>
             <hr />

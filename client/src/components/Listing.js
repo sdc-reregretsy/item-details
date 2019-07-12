@@ -12,17 +12,20 @@ class Listing extends React.Component {
     super(props);
 
     this.state = {
+      // Hardcoded itemData that corresponds to hardcoded photo for initial state
       item_id: 719445611,
       title: 'Vintage Garden Book (1968)',
       description:
         'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
       price: '16.00'
+      // shippingInfo: ''
     };
 
     this.fetchItem = this.fetchItem.bind(this);
   }
 
   componentDidMount() {
+    // Render random item when page refreshes
     const ids = [
       81814051,
       95525599,
@@ -140,6 +143,7 @@ class Listing extends React.Component {
           title: response.data[0].title,
           description: response.data[0].description,
           price: response.data[0].price
+          // shippingInfo: response.data[0].shipping_info
         });
       })
       .catch(err => console.log('error in fetchItem: ', err));
@@ -158,7 +162,10 @@ class Listing extends React.Component {
             </Col>
             <Col md={4}>
               <Title title={this.state.title} price={this.state.price} />
-              <Details description={this.state.description} />
+              <Details
+                description={this.state.description}
+                shippingInfo={this.state.shippingInfo}
+              />
             </Col>
           </Row>
         </Container>
