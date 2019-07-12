@@ -33,9 +33,9 @@ const seedDBSellers = function(data) {
   const sellers = data.sellerData;
   sellers.forEach(seller => {
     connection.query(
-      `INSERT INTO sellers (seller, avgRating) VALUES ("${seller.seller}", ${
+      `UPDATE items SET seller = "${seller.seller}", avgRating = ${
         seller.avgRating
-      })`,
+      } WHERE listing_id = ${seller.item}`,
       function(error, results) {
         if (error) {
           console.log('Error in seedDB: ', error);

@@ -9,15 +9,17 @@ CREATE TABLE items (
     title VARCHAR(500),
     description TEXT,
     price VARCHAR(20),
-    quantity INT
+    quantity INT,
+    seller VARCHAR(500),
+    avgRating INT
     -- shipping_info VARCHAR(500),
 );
 
-CREATE TABLE sellers (
-    seller_id SERIAL PRIMARY KEY,
-    seller VARCHAR(500),
-    avgRating INT
-);
+-- CREATE TABLE sellers (
+--     seller_id SERIAL PRIMARY KEY,
+--     seller VARCHAR(500),
+--     avgRating INT
+-- );
 
 -- Execute this file from the command line by typing:
 -- mysql -u root -p < schema.sql

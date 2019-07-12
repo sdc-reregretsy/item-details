@@ -17,7 +17,9 @@ class Listing extends React.Component {
       title: 'Vintage Garden Book (1968)',
       description:
         'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
-      price: '16.00'
+      price: '16.00',
+      seller: 'annielesperance',
+      avgRating: 3
       // shippingInfo: ''
     };
 
@@ -161,10 +163,14 @@ class Listing extends React.Component {
               />
             </Col>
             <Col md={4}>
-              <Title title={this.state.title} price={this.state.price} />
+              <Title
+                seller={this.state.seller}
+                title={this.state.title}
+                price={this.state.price}
+              />
               <Details
                 description={this.state.description}
-                shippingInfo={this.state.shippingInfo}
+                // shippingInfo={this.state.shippingInfo}
               />
             </Col>
           </Row>
