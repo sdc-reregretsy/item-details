@@ -21,7 +21,6 @@ class Listing extends React.Component {
       quantity: 1,
       seller: 'annielesperance',
       avgRating: 3
-      // shippingInfo: ''
     };
 
     this.fetchItem = this.fetchItem.bind(this);
@@ -171,10 +170,7 @@ class Listing extends React.Component {
                 title={this.state.title}
                 price={this.state.price}
               />
-              <Details
-                description={this.state.description}
-                // shippingInfo={this.state.shippingInfo}
-              />
+              <Details description={this.state.description} />
             </Col>
           </Row>
         </Container>
