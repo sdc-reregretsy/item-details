@@ -3106,7 +3106,7 @@ const itemData = {
       title:
         '14K Gold Filled Bracelet,White Opal Bracelet,Tiny Opal Bracelet,Simple Dainty Gold Bracelet,Minimalist Gold Bracelet,Cuff Bracelet,Delicate',
       description:
-        "14K Gold Filled Bracelet,White Opal Bracelet,Tiny Opal Bracelet,Simple Dainty Gold Bracelet,Minimalist Gold Bracelet,Cuff Bracelet,Delicate.\n\n&lt;> Available in sterling silver 925 or gold-filled 14k.\n\n &lt;> Nickel Free.  \n &lt;>Tarnish Resistant. \n &lt;> High Quality Materials.\n\n &lt;> Gemstone Type -natural opal\n &lt;> Gemstone Size -6mm \n &lt;> Gemstone Cut – Round\n &lt;> Metal Type - gold filled 14k\n\n &lt;> Bracelet size- \n\nXS – Length- 6.5' + Extension chain – 1.3'\nS   - Length- 7' + Extension chain – 1.3' \nM – Length- 7.5' + Extension chain – 1.3'\nL   - Length - 8'+ Extension chain – 1.3' \nXL – Length - 8.5'+ Extension chain – 1.3' \n\nGOLD-FILLED 14K-\nGold filled components contain 100+ times more real gold than gold plated components and are very durable and tarnish resistant. Gold filled jewelry is a beautiful, affordable alternative to solid gold, and can be worn by people with sensitive skin.\n\n&lt;> Item will arrive in a pretty gift box, wrapped and ready for gift giving.\n\n&lt;> Delivery time- express mail+tracking number.\n\nThank you for visiting my shop :)",
+        "14K Gold Filled Bracelet,White Opal Bracelet,Tiny Opal Bracelet,Simple Dainty Gold Bracelet,Minimalist Gold Bracelet,Cuff Bracelet,Delicate.\n\n > Available in sterling silver 925 or gold-filled 14k.\n\n  > Nickel Free.  \n  >Tarnish Resistant. \n  > High Quality Materials.\n\n  > Gemstone Type -natural opal\n  > Gemstone Size -6mm \n  > Gemstone Cut – Round\n  > Metal Type - gold filled 14k\n\n  > Bracelet size- \n\nXS – Length- 6.5' + Extension chain – 1.3'\nS   - Length- 7' + Extension chain – 1.3' \nM – Length- 7.5' + Extension chain – 1.3'\nL   - Length - 8'+ Extension chain – 1.3' \nXL – Length - 8.5'+ Extension chain – 1.3' \n\nGOLD-FILLED 14K-\nGold filled components contain 100+ times more real gold than gold plated components and are very durable and tarnish resistant. Gold filled jewelry is a beautiful, affordable alternative to solid gold, and can be worn by people with sensitive skin.\n\n > Item will arrive in a pretty gift box, wrapped and ready for gift giving.\n\n > Delivery time- express mail+tracking number.\n\nThank you for visiting my shop :)",
       creation_tsz: 1562452018,
       ending_tsz: 1573082818,
       original_creation_tsz: 1528267825,
@@ -3982,7 +3982,7 @@ const itemData = {
       title:
         'Blue Turquoise Round  beads  6 or 8 mm Rustic Turquoise gemstone beads / Blue Raw Turquoise Beads / choose quantity CHECK PHOTOS for Colours',
       description:
-        'Gorgeous natural rustic  Turquoise round beads.\nThese are stabilised so can be used in all jewellery designs.\nThese are unique and amazing with fabulous tonal variance.\nThe 6mm are a lighter tone..very beautiful &lt;3\nPLEASE NOTE The 3rd and 4th pics show the 8mm beads they are darker more of a greeny blue as shown.\n\nChoose quantity from drop down menu at the side.\nChoose size.',
+        'Gorgeous natural rustic  Turquoise round beads.\nThese are stabilised so can be used in all jewellery designs.\nThese are unique and amazing with fabulous tonal variance.\nThe 6mm are a lighter tone..very beautiful  3\nPLEASE NOTE The 3rd and 4th pics show the 8mm beads they are darker more of a greeny blue as shown.\n\nChoose quantity from drop down menu at the side.\nChoose size.',
       creation_tsz: 1562452013,
       ending_tsz: 1573082813,
       original_creation_tsz: 1520523556,
@@ -6348,7 +6348,7 @@ const itemData = {
       title:
         'Large Black tourmaline crystal pendant, raw rough natural black tourmaline pendant, large chunky black tourmaline necklace, terminated black',
       description:
-        "stunning, large crystals of black tourmaline! these chunky pieces are wrapped into a simple secure, 'cage' setting. All natural, raw rough pieces!\n\ni wire wrapped these crystals in pure copper\ni offer all of my copper wrapped pendants with a leather chord that is tied to be adjustable \nor \na copper color chain (16', 18'  20' or 24') for $3 extra\nCustom chains also available\nthe choice is yours!\n\n&lt;3\n\nFind us on instagram for giveaways and promotions @constantruckus",
+        "stunning, large crystals of black tourmaline! these chunky pieces are wrapped into a simple secure, 'cage' setting. All natural, raw rough pieces!\n\ni wire wrapped these crystals in pure copper\ni offer all of my copper wrapped pendants with a leather chord that is tied to be adjustable \nor \na copper color chain (16', 18'  20' or 24') for $3 extra\nCustom chains also available\nthe choice is yours!\n\n 3\n\nFind us on instagram for giveaways and promotions @constantruckus",
       creation_tsz: 1562771702,
       ending_tsz: 1573402502,
       original_creation_tsz: 1533917842,

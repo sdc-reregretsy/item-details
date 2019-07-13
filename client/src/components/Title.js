@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import Rating from 'react-rating';
 
 const Title = props => {
