@@ -1,11 +1,10 @@
 import React from 'react';
 import Title from './Title.js';
 import Details from './Details.js';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import Modal from 'react-bootstrap/Modal';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import BuyItNowModal from './BuyItNowModal.js';
+import AddToCartModal from './AddToCartModal.js';
+import MessageSellerModal from './MessageSellerModal.js';
 import axios from 'axios';
 
 class Listing extends React.Component {
@@ -25,7 +24,6 @@ class Listing extends React.Component {
     };
 
     this.fetchItem = this.fetchItem.bind(this);
-    this.handleShow = this.handleShow.bind(this);
   }
 
   componentDidMount() {
@@ -141,7 +139,7 @@ class Listing extends React.Component {
     axios
       .get(`/details/${id}`)
       .then(response => {
-        console.log('fetchItem: ', response.data[0]);
+        // console.log('fetchItem: ', response.data[0]);
         this.setState({
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
@@ -153,16 +151,6 @@ class Listing extends React.Component {
         });
       })
       .catch(err => console.log('error in fetchItem: ', err));
-  }
-
-  handleShow() {
-    return (
-      <Modal
-        size='lg'
-        aria-labelledby='contained-modal-title-vcenter'
-        centered
-      />
-    );
   }
 
   render() {
@@ -182,8 +170,10 @@ class Listing extends React.Component {
                 title={this.state.title}
                 price={this.state.price}
                 avgRating={this.state.avgRating}
-                handleShow={this.handleShow}
               />
+              <MessageSellerModal />
+              <BuyItNowModal />
+              <AddToCartModal />
               <Details description={this.state.description} />
             </Col>
           </Row>

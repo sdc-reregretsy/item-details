@@ -1,7 +1,9 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import Rating from 'react-rating';
-import PopUp from './PopUp';
+import MessageSellerModal from './MessageSellerModal.js';
+import BuyItNowModal from './BuyItNowModal.js';
+import AddToCartModal from './AddToCartModal.js';
 
 const Title = props => {
   return (
@@ -29,7 +31,7 @@ const Title = props => {
             size='sm'
             onClick={() => {
               console.log('clicked on Message Seller!');
-              render(<PopUp />);
+              <MessageSellerModal />;
             }}
           >
             Message Seller
@@ -49,6 +51,11 @@ const Title = props => {
           <option>8</option>
           <option>9</option>
           <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
         </select>
       </div>
       <Button
@@ -57,7 +64,8 @@ const Title = props => {
         size='sm'
         block
         onClick={() => {
-          console.log('clicked on Buy it now!');
+          console.log('clicked on Add to cart!');
+          <BuyItNowModal />;
         }}
       >
         Buy it now
@@ -70,6 +78,7 @@ const Title = props => {
         active
         onClick={() => {
           console.log('clicked on Add to cart!');
+          <AddToCartModal />;
         }}
       >
         Add to cart
