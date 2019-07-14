@@ -1,10 +1,7 @@
 import React from 'react';
 import Title from './Title.js';
 import Details from './Details.js';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import axios from 'axios';
 
 class Listing extends React.Component {
@@ -19,8 +16,8 @@ class Listing extends React.Component {
         'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
       price: '16.00',
       quantity: 1,
-      seller: 'annielesperance',
-      avgRating: 3
+      seller: 'FoundFauna',
+      avgRating: 5
     };
 
     this.fetchItem = this.fetchItem.bind(this);
@@ -132,14 +129,14 @@ class Listing extends React.Component {
     ];
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
-    this.fetchItem(719445611);
+    this.fetchItem(id);
   }
 
   fetchItem(id) {
     axios
       .get(`/details/${id}`)
       .then(response => {
-        console.log('fetchItem: ', response.data[0]);
+        // console.log('fetchItem: ', response.data[0]);
         this.setState({
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
@@ -169,6 +166,7 @@ class Listing extends React.Component {
                 seller={this.state.seller}
                 title={this.state.title}
                 price={this.state.price}
+                avgRating={this.state.avgRating}
               />
               <Details description={this.state.description} />
             </Col>
