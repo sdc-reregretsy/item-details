@@ -39,23 +39,6 @@ class Title extends React.Component {
   }
 
   render() {
-    const isMessageSellerClicked = this.state.msgSellerClicked;
-    const isBuyItNowClicked = this.state.buyItNowClicked;
-    const isAddToCartClicked = this.state.addToCartClicked;
-    let messageSeller, buyNow, addCart;
-
-    if (isMessageSellerClicked) {
-      messageSeller = <MessageSellerModal />;
-    }
-
-    if (isBuyItNowClicked) {
-      buyNow = <BuyItNowModal />;
-    }
-
-    if (isAddToCartClicked) {
-      addCart = <AddToCartModal />;
-    }
-
     return (
       <div>
         <p>
@@ -86,7 +69,7 @@ class Title extends React.Component {
             >
               Message Seller
             </Button>
-            {messageSeller}
+            {this.state.msgSellerClicked && <MessageSellerModal />}
           </span>
         </p>
         <div className='select-wrapper'>
@@ -121,7 +104,7 @@ class Title extends React.Component {
         >
           Buy it now
         </Button>
-        {buyNow}
+        {this.state.buyItNowClicked && <BuyItNowModal />}
         <Button
           className='addToCartBtn'
           variant='dark'
@@ -135,7 +118,7 @@ class Title extends React.Component {
         >
           Add to cart
         </Button>
-        {addCart}
+        {this.state.addToCartClicked && <AddToCartModal />}
       </div>
     );
   }

@@ -6348,7 +6348,7 @@ const itemData = {
       title:
         'Large Black tourmaline crystal pendant, raw rough natural black tourmaline pendant, large chunky black tourmaline necklace, terminated black',
       description:
-        "stunning, large crystals of black tourmaline! these chunky pieces are wrapped into a simple secure, 'cage' setting. All natural, raw rough pieces!\n\ni wire wrapped these crystals in pure copper\ni offer all of my copper wrapped pendants with a leather chord that is tied to be adjustable \nor \na copper color chain (16', 18'  20' or 24') for $3 extra\nCustom chains also available\nthe choice is yours!\n\n 3\n\nFind us on instagram for giveaways and promotions @constantruckus",
+        "stunning, large crystals of black tourmaline! these chunky pieces are wrapped into a simple secure, 'cage' setting. All natural, raw rough pieces!\n\ni wire wrapped these crystals in pure copper\ni offer all of my copper wrapped pendants with a leather chord that is tied to be adjustable \nor \na copper color chain (16', 18'  20' or 24') for $3 extra\nCustom chains also available\nthe choice is yours!\n\nFind us on instagram for giveaways and promotions @constantruckus",
       creation_tsz: 1562771702,
       ending_tsz: 1573402502,
       original_creation_tsz: 1533917842,
