@@ -7,7 +7,7 @@ class MessageSellerModal extends React.Component {
     super(props);
 
     this.state = {
-      showMessageSellerModal: false
+      showMessageSellerModal: true
     };
 
     this.toggleShowMessageSellerModal = this.toggleShowMessageSellerModal.bind(

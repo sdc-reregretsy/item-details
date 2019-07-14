@@ -7,7 +7,7 @@ class BuyItNowModal extends React.Component {
     super(props);
 
     this.state = {
-      showBuyItNowModal: false
+      showBuyItNowModal: true
     };
 
     this.toggleShowBuyItNowModal = this.toggleShowBuyItNowModal.bind(this);

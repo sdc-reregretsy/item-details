@@ -171,9 +171,9 @@ class Listing extends React.Component {
                 price={this.state.price}
                 avgRating={this.state.avgRating}
               />
-              <MessageSellerModal />
-              <BuyItNowModal />
-              <AddToCartModal />
+              {/* <MessageSellerModal /> */}
+              {/* <BuyItNowModal /> */}
+              {/* <AddToCartModal /> */}
               <Details description={this.state.description} />
             </Col>
           </Row>

@@ -7,7 +7,7 @@ class AddToCartModal extends React.Component {
     super(props);
 
     this.state = {
-      showAddToCartModal: false
+      showAddToCartModal: true
     };
 
     this.toggleShowAddToCartModal = this.toggleShowAddToCartModal.bind(this);
