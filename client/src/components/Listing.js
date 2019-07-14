@@ -2,9 +2,6 @@ import React from 'react';
 import Title from './Title.js';
 import Details from './Details.js';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import BuyItNowModal from './BuyItNowModal.js';
-import AddToCartModal from './AddToCartModal.js';
-import MessageSellerModal from './MessageSellerModal.js';
 import axios from 'axios';
 
 class Listing extends React.Component {
@@ -171,9 +168,6 @@ class Listing extends React.Component {
                 price={this.state.price}
                 avgRating={this.state.avgRating}
               />
-              {/* <MessageSellerModal /> */}
-              {/* <BuyItNowModal /> */}
-              {/* <AddToCartModal /> */}
               <Details description={this.state.description} />
             </Col>
           </Row>

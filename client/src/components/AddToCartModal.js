@@ -1,35 +1,30 @@
 import React from 'react';
-import { Button, Modal, ModalBody, ModalFooter } from 'react-bootstrap';
-import ModalHeader from 'react-bootstrap/ModalHeader';
+import { Button, Modal } from 'react-bootstrap';
 
 class AddToCartModal extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      showAddToCartModal: true
-    };
-
-    this.toggleShowAddToCartModal = this.toggleShowAddToCartModal.bind(this);
-  }
-
-  toggleShowAddToCartModal() {
-    this.setState({ showAddToCartModal: !this.state.showAddToCartModal });
   }
 
   render() {
     return (
-      <Modal show={this.state.showAddToCartModal}>
-        <ModalHeader>Add to cart button</ModalHeader>
-        <ModalBody>Item has been added to cart!</ModalBody>
-        <ModalFooter>
-          <Button variant='secondary' onClick={this.toggleShowAddToCartModal}>
+      <Modal show={this.props.showAddToCartModal}>
+        <Modal.Header>Add to cart button</Modal.Header>
+        <Modal.Body>Item has been added to cart!</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant='secondary'
+            onClick={this.props.toggleShowAddToCartModal}
+          >
             Proceed to checkout
           </Button>
-          <Button variant='primary' onClick={this.toggleShowAddToCartModal}>
+          <Button
+            variant='primary'
+            onClick={this.props.toggleShowAddToCartModal}
+          >
             Continue Shopping
           </Button>
-        </ModalFooter>
+        </Modal.Footer>
       </Modal>
     );
   }

@@ -10,34 +10,30 @@ class Title extends React.Component {
     super(props);
 
     this.state = {
-      msgSellerClicked: false,
-      buyItNowClicked: false,
-      addToCartClicked: false
+      showMessageSellerModal: false,
+      showBuyItNowModal: false,
+      showAddToCartModal: false
     };
 
-    this.toggleClickOnMsgSeller = this.toggleClickOnMsgSeller.bind(this);
-    this.toggleClickOnBuyItNow = this.toggleClickOnBuyItNow.bind(this);
-    this.toggleClickOnAddToCart = this.toggleClickOnAddToCart.bind(this);
+    this.toggleShowMessageSellerModal = this.toggleShowMessageSellerModal.bind(
+      this
+    );
+    this.toggleShowBuyItNowModal = this.toggleShowBuyItNowModal.bind(this);
+    this.toggleShowAddToCartModal = this.toggleShowAddToCartModal.bind(this);
   }
 
-  toggleClickOnMsgSeller() {
+  toggleShowMessageSellerModal() {
     this.setState({
-      msgSellerClicked: !this.state.msgSellerClicked
+      showMessageSellerModal: !this.state.showMessageSellerModal
     });
   }
-
-  toggleClickOnBuyItNow() {
-    this.setState({
-      buyItNowClicked: !this.state.buyItNowClicked
-    });
+  toggleShowBuyItNowModal() {
+    this.setState({ showBuyItNowModal: !this.state.showBuyItNowModal });
   }
 
-  toggleClickOnAddToCart() {
-    this.setState({
-      addToCartClicked: !this.state.addToCartClicked
-    });
+  toggleShowAddToCartModal() {
+    this.setState({ showAddToCartModal: !this.state.showAddToCartModal });
   }
-
   render() {
     return (
       <div>
@@ -62,14 +58,14 @@ class Title extends React.Component {
               className='messageBtn'
               variant='outline-secondary'
               size='sm'
-              onClick={() => {
-                console.log('clicked on Message Seller!');
-                this.toggleClickOnMsgSeller();
-              }}
+              onClick={this.toggleShowMessageSellerModal}
             >
               Message Seller
             </Button>
-            {this.state.msgSellerClicked && <MessageSellerModal />}
+            <MessageSellerModal
+              showMessageSellerModal={this.state.showMessageSellerModal}
+              toggleShowMessageSellerModal={this.toggleShowMessageSellerModal}
+            />
           </span>
         </p>
         <div className='select-wrapper'>
@@ -97,28 +93,28 @@ class Title extends React.Component {
           variant='outline-dark'
           size='sm'
           block
-          onClick={() => {
-            console.log('clicked on Buy it now!');
-            this.toggleClickOnBuyItNow();
-          }}
+          onClick={this.toggleShowBuyItNowModal}
         >
           Buy it now
         </Button>
-        {this.state.buyItNowClicked && <BuyItNowModal />}
+        <BuyItNowModal
+          showBuyItNowModal={this.state.showBuyItNowModal}
+          toggleShowBuyItNowModal={this.toggleShowBuyItNowModal}
+        />
         <Button
           className='addToCartBtn'
           variant='dark'
           size='sm'
           block
           active
-          onClick={() => {
-            console.log('clicked on Add to cart!');
-            this.toggleClickOnAddToCart();
-          }}
+          onClick={this.toggleShowAddToCartModal}
         >
           Add to cart
         </Button>
-        {this.state.addToCartClicked && <AddToCartModal />}
+        <AddToCartModal
+          showAddToCartModal={this.state.showAddToCartModal}
+          toggleShowAddToCartModal={this.toggleShowAddToCartModal}
+        />
       </div>
     );
   }
