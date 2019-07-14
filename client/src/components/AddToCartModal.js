@@ -8,9 +8,9 @@ class AddToCartModal extends React.Component {
 
   render() {
     return (
-      <Modal show={this.props.showAddToCartModal}>
-        <Modal.Header>Add to cart button</Modal.Header>
-        <Modal.Body>Item has been added to cart!</Modal.Body>
+      <Modal show={this.props.showAddToCartModal} centered>
+        <Modal.Header>Add item to cart</Modal.Header>
+        <Modal.Body>{this.props.item} has been added to cart!</Modal.Body>
         <Modal.Footer>
           <Button
             variant='secondary'
