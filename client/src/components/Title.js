@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Rating from 'react-rating';
+import PopUp from './PopUp';
 
 const Title = props => {
   return (
@@ -13,6 +14,7 @@ const Title = props => {
             readonly
             fullSymbol='fa fa-star fa-2x'
             emptySymbol='fa fa-star-o fa-2x'
+            initialRating={props.avgRating}
           />
         </span>
       </p>
@@ -21,7 +23,15 @@ const Title = props => {
       <p>
         <span className='price'>${props.price}</span>
         <span>
-          <Button className='messageBtn' variant='outline-secondary' size='sm'>
+          <Button
+            className='messageBtn'
+            variant='outline-secondary'
+            size='sm'
+            onClick={() => {
+              console.log('clicked on Message Seller!');
+              render(<PopUp />);
+            }}
+          >
             Message Seller
           </Button>
         </span>
@@ -41,10 +51,27 @@ const Title = props => {
           <option>10</option>
         </select>
       </div>
-      <Button className='buyBtn' variant='outline-dark' size='sm' block>
+      <Button
+        className='buyBtn'
+        variant='outline-dark'
+        size='sm'
+        block
+        onClick={() => {
+          console.log('clicked on Buy it now!');
+        }}
+      >
         Buy it now
       </Button>
-      <Button className='buyBtn' variant='dark' size='sm' block active>
+      <Button
+        className='addToCartBtn'
+        variant='dark'
+        size='sm'
+        block
+        active
+        onClick={() => {
+          console.log('clicked on Add to cart!');
+        }}
+      >
         Add to cart
       </Button>
     </div>

@@ -1,18 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-const Details = (props) => {
-    return <div>
+const Details = props => {
+  return (
+    <div>
+      <hr />
+      <h1 className='itemDetails'>Item details</h1>
+      <p className='description'>{props.description}</p>
+      <hr />
+      <div className='shipping'>
+        Shipping & policies
+        <br />
+        <div className='shippingInfo'>
+          Get it fast! Ready to ship in 1–2 business days.
+          <br />
+          From Kensington, MD
+          <br />
+          <a href='#'>Get shipping cost</a>
+          <br />
+          <br />
+          <a href='#'>View shop policies</a>
+        </div>
         <hr />
-        <h1 className="itemDetails">Item details</h1>
-        <p className="description">{props.description}</p>
-        <hr />
-        <p className="shipping">Shipping & policies<br></br>
-            <p className="shippingInfo">Get it fast! Ready to ship in 1–2 business days.<br></br>From Kensington, MD<br></br>
-                <a href="#">Get shipping cost</a><br></br><br></br>
-                <a href="#">View shop policies</a></p>
-            <hr />
-        </p>
-    </div>;
-}
+      </div>
+    </div>
+  );
+};
 
 export default Details;

@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 
 class Listing extends React.Component {
@@ -19,11 +20,12 @@ class Listing extends React.Component {
         'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
       price: '16.00',
       quantity: 1,
-      seller: 'annielesperance',
-      avgRating: 3
+      seller: 'FoundFauna',
+      avgRating: 5
     };
 
     this.fetchItem = this.fetchItem.bind(this);
+    this.handleShow = this.handleShow.bind(this);
   }
 
   componentDidMount() {
@@ -132,7 +134,7 @@ class Listing extends React.Component {
     ];
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
-    this.fetchItem(719445611);
+    this.fetchItem(id);
   }
 
   fetchItem(id) {
@@ -153,6 +155,16 @@ class Listing extends React.Component {
       .catch(err => console.log('error in fetchItem: ', err));
   }
 
+  handleShow() {
+    return (
+      <Modal
+        size='lg'
+        aria-labelledby='contained-modal-title-vcenter'
+        centered
+      />
+    );
+  }
+
   render() {
     return (
       <div>
@@ -169,6 +181,8 @@ class Listing extends React.Component {
                 seller={this.state.seller}
                 title={this.state.title}
                 price={this.state.price}
+                avgRating={this.state.avgRating}
+                handleShow={this.handleShow}
               />
               <Details description={this.state.description} />
             </Col>
