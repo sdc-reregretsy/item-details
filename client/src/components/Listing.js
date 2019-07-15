@@ -17,7 +17,9 @@ class Listing extends React.Component {
       price: '16.00',
       quantity: 1,
       seller: 'FoundFauna',
-      avgRating: 5
+      avgRating: 5,
+      cartImage:
+        'https://i.etsystatic.com/19866202/d/il/9db3c0/1981665817/il_170x135.1981665817_mjym.jpg?version=0'
     };
 
     this.fetchItem = this.fetchItem.bind(this);
@@ -144,7 +146,8 @@ class Listing extends React.Component {
           price: response.data[0].price,
           quantity: response.data[0].quantity,
           seller: response.data[0].seller,
-          avgRating: response.data[0].avgRating
+          avgRating: response.data[0].avgRating,
+          cartImage: response.data[0].cartImage
         });
       })
       .catch(err => console.log('error in fetchItem: ', err));
@@ -167,6 +170,7 @@ class Listing extends React.Component {
                 title={this.state.title}
                 price={this.state.price}
                 avgRating={this.state.avgRating}
+                cartImage={this.state.cartImage}
               />
               <Details description={this.state.description} />
             </Col>

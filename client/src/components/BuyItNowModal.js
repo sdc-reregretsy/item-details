@@ -8,7 +8,11 @@ class BuyItNowModal extends React.Component {
 
   render() {
     return (
-      <Modal show={this.props.showBuyItNowModal} centered>
+      <Modal
+        show={this.props.showBuyItNowModal}
+        centered
+        dialogClassName='.modal-buyItNow'
+      >
         <Modal.Header
           className='buyNowHeader'
           closeButton

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Image } from 'react-bootstrap';
 
 class AddToCartModal extends React.Component {
   constructor(props) {
@@ -8,18 +8,36 @@ class AddToCartModal extends React.Component {
 
   render() {
     return (
-      <Modal show={this.props.showAddToCartModal} centered>
-        <Modal.Header>Add item to cart</Modal.Header>
-        <Modal.Body>{this.props.item} has been added to cart!</Modal.Body>
+      <Modal
+        show={this.props.showAddToCartModal}
+        centered
+        dialogClassName='modal-addToCart'
+      >
+        <Modal.Header
+          className='addToCartHeader'
+          closeButton
+          onClick={this.props.toggleShowAddToCartModal}
+        >
+          Item added!
+        </Modal.Header>
+        <Modal.Body className='addToCartBody'>
+          <div>
+            <p className='itemInCart'>{this.props.item}</p>
+            <Image src={this.props.cartImage} fluid />
+            <p className='hasBeenAdded'>has been added to cart!</p>
+          </div>
+        </Modal.Body>
         <Modal.Footer>
           <Button
+            className='proceedAddToCart'
             variant='secondary'
             onClick={this.props.toggleShowAddToCartModal}
           >
             Proceed to checkout
           </Button>
           <Button
-            variant='primary'
+            className='continueShopping'
+            variant='outline-primary'
             onClick={this.props.toggleShowAddToCartModal}
           >
             Continue Shopping
