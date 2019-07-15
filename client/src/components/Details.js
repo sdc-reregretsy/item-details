@@ -8,18 +8,18 @@ const Details = props => {
       <p className='description'>{props.description}</p>
       <hr />
       <h1 className='shipping'>Shipping & policies</h1>
-      <p className='shippingInfo'>
-        <p className='bolded'>
+      <div className='shippingInfo'>
+        <div>
           Get it fast! Ready to ship in 1–2 business days.
           <br />
           From United States
-        </p>
-        <p className='bolded'>No returns or exchanges</p>
+        </div>
+        <p>No returns or exchanges</p>
         <p>But please contact me if you have any problems with your order.</p>
         <a href='#'>Get shipping cost</a>
         <br />
         <a href='#'>View shop policies</a>
-      </p>
+      </div>
       <hr />
     </div>
   );

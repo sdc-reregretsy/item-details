@@ -1,5 +1,5 @@
 const express = require('express');
-const axios = require('axios');
+const cors = require('cors');
 const db = require('../database/index');
 const itemData = require('../database/itemData');
 const sellerData = require('../database/sellerData.js');
@@ -9,6 +9,7 @@ const app = express();
 
 app.use('/', express.static('./client/dist'));
 app.use(express.json());
+app.use(cors());
 
 // Database has been seeded! Uncomment to seed DB again:
 // db.seedDBItems(itemData);
@@ -19,10 +20,6 @@ app.get('/details/:id', (req, res) => {
     res.send(response);
   });
 });
-
-// app.post('/details', (req, res) => {
-//   res.end();
-// });
 
 app.listen(port, () => {
   console.log(`Item Details server listening on port ${port}`);

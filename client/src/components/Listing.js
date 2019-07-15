@@ -8,6 +8,8 @@ class Listing extends React.Component {
   constructor(props) {
     super(props);
 
+    this.bc = new BroadcastChannel('regretfully');
+
     this.state = {
       item_id: null,
       title: '',
@@ -153,6 +155,10 @@ class Listing extends React.Component {
   }
 
   render() {
+    this.bc.onmessage = function(ev) {
+      console.log(ev);
+    };
+
     return (
       <div>
         <Container>

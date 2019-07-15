@@ -11,11 +11,13 @@ class BuyItNowModal extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
   }
+
   handleChange(event) {
     this.setState({
       selected: event.target.value
     });
   }
+
   render() {
     return (
       <Modal

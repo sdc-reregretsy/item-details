@@ -31,9 +31,7 @@ class AddToCartModal extends React.Component {
                 <p className='priceInCart'>${this.props.price}</p>
               </Col>
             </Row>
-            <Row>
-              {/* <p className='hasBeenAdded'>has been added to cart!</p> */}
-            </Row>
+            <Row />
           </Container>
         </Modal.Body>
         <Modal.Footer>

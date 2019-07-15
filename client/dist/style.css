@@ -40,6 +40,7 @@
   opacity: 0;
   transition: opacity 0.4s;
 }
+
 .modal-backdrop.show {
   opacity: 0.8;
   background: #dddddd;
@@ -96,10 +97,6 @@ button {
   -webkit-appearance: none;
 }
 
-/* .close {
-  text-align: right;
-} */
-
 .buyBtn,
 .addToCartBtn {
   font-size: 15px;
@@ -113,20 +110,6 @@ button {
   padding: 8px 12px;
   height: 38px;
 }
-
-/* .btn-outline-dark:hover,
-.btn-outline-dark:focus,
-.btn-outline-dark:active,
-.btn-outline-dark.active,
-.open > .dropdown-toggle.btn-outline-dark {
-  color: #222;
-  background-color: #2222;
-} */
-
-/* .modal-addToCart,
-.modal-buyItNow {
-  width: 40%;
-} */
 
 .buyNowHeader,
 .addToCartHeader {
@@ -170,11 +153,6 @@ button {
 .form-control {
   width: 90% !important;
 }
-
-/* input[type='radio']:checked + input:before {
-  border-color: #adaeaa;
-  background: #e55400;
-} */
 
 .paymentMethod {
   margin-top: 8px;
@@ -353,11 +331,6 @@ button {
 .description {
   white-space: pre-wrap;
 }
-
-/* .bolded {
-  font-size: 15.5px;
-  font-weight: bold;
-} */
 
 a {
   text-decoration: underline;
