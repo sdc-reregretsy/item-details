@@ -11,7 +11,9 @@ CREATE TABLE items (
     price VARCHAR(20),
     quantity INT,
     seller VARCHAR(500),
-    avgRating INT
+    avgRating INT,
+    cartImage VARCHAR(500),
+    mainImage VARCHAR(500)
 );
 
 -- Execute this file from the command line by typing:
