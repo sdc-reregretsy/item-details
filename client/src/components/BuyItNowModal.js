@@ -4,8 +4,18 @@ import { Button, Modal, Form } from 'react-bootstrap';
 class BuyItNowModal extends React.Component {
   constructor(props) {
     super(props);
-  }
 
+    this.state = {
+      selected: ''
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    this.setState({
+      selected: event.target.value
+    });
+  }
   render() {
     return (
       <Modal
@@ -25,6 +35,9 @@ class BuyItNowModal extends React.Component {
             <div className='paymentIcons'>
               <Form.Check
                 type='radio'
+                value='cc'
+                checked={this.state.selected === 'cc'}
+                onChange={this.handleChange}
                 label={
                   <div>
                     <span className='visa'>
@@ -44,6 +57,9 @@ class BuyItNowModal extends React.Component {
               />
               <Form.Check
                 type='radio'
+                value='pp'
+                checked={this.state.selected === 'pp'}
+                onChange={this.handleChange}
                 label={
                   <span className='paypal'>
                     <i class='fab fa-cc-paypal' />
