@@ -15,7 +15,7 @@ app.use(cors());
 // db.seedDBItems(itemData);
 // db.seedDBSellers(sellerData);
 
-app.get('/details/:id', (req, res) => {
+app.get('http://localhost:3001/details/:id', (req, res) => {
   db.retrieveItem(req.params.id, response => {
     res.send(response);
   });

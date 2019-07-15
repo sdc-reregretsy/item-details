@@ -33,7 +33,9 @@ const seedDBSellers = function(data) {
   const sellers = data.sellerData;
   sellers.forEach(seller => {
     connection.query(
-      `UPDATE items SET seller = "${seller.seller}", avgRating = ${
+      `UPDATE items SET sellerName="${seller.sellerName}", sellerUsername="${
+        seller.sellerUsername
+      }", sellerAvatar="${seller.sellerAvatar}", avgRating=${
         seller.avgRating
       } WHERE listing_id = ${seller.item}`,
       function(error, results) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Form, Col } from 'react-bootstrap';
+import { Button, Modal, Form } from 'react-bootstrap';
 
 class MessageSellerModal extends React.Component {
   constructor(props) {
