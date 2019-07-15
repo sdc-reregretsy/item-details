@@ -13,11 +13,11 @@ const seedDBItems = function(data) {
   const inventory = data.itemData.results;
   inventory.forEach(item => {
     connection.query(
-      `INSERT INTO items (listing_id, title, description, price, quantity, cartImage) VALUES (${
+      `INSERT INTO items (listing_id, title, description, price, quantity, cartImage, mainImage) VALUES (${
         item.listing_id
       }, "${item.title}", "${item.description}", "${item.price}", ${
         item.quantity
-      }, "${item.MainImage.url_170x135}")`,
+      }, "${item.MainImage.url_170x135}", "${item.MainImage.url_fullxfull}")`,
       function(error, results) {
         if (error) {
           console.log('Error in seedDB: ', error);

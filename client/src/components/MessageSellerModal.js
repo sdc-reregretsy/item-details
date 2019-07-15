@@ -17,7 +17,12 @@ class MessageSellerModal extends React.Component {
           Got questions? {this.props.seller} can help!
         </Modal.Header>
         <Modal.Body>
-          <Form inline>
+          <Form
+            inline
+            onSubmit={() => {
+              event.preventDefault();
+            }}
+          >
             <Form.Control
               type='textarea'
               placeholder='Write a message and hit enter to send'
