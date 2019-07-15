@@ -7,21 +7,20 @@ const Details = props => {
       <h1 className='itemDetails'>Item details</h1>
       <p className='description'>{props.description}</p>
       <hr />
-      <div className='shipping'>
-        Shipping & policies
-        <br />
-        <div className='shippingInfo'>
+      <h1 className='shipping'>Shipping & policies</h1>
+      <p className='shippingInfo'>
+        <p className='bolded'>
           Get it fast! Ready to ship in 1–2 business days.
           <br />
-          From Kensington, MD
-          <br />
-          <a href='#'>Get shipping cost</a>
-          <br />
-          <br />
-          <a href='#'>View shop policies</a>
-        </div>
-        <hr />
-      </div>
+          From United States
+        </p>
+        <p className='bolded'>No returns or exchanges</p>
+        <p>But please contact me if you have any problems with your order.</p>
+        <a href='#'>Get shipping cost</a>
+        <br />
+        <a href='#'>View shop policies</a>
+      </p>
+      <hr />
     </div>
   );
 };

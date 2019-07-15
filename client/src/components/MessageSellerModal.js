@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Form, Col } from 'react-bootstrap';
 
 class MessageSellerModal extends React.Component {
   constructor(props) {
@@ -8,23 +8,31 @@ class MessageSellerModal extends React.Component {
 
   render() {
     return (
-      <Modal show={this.props.showMessageSellerModal}>
-        <Modal.Header>Message seller button</Modal.Header>
-        <Modal.Body>Got questions? Seller can help!</Modal.Body>
-        <Modal.Footer>
-          <Button
-            variant='secondary'
-            onClick={this.props.toggleShowMessageSellerModal}
-          >
-            Send
-          </Button>
-          <Button
-            variant='primary'
-            onClick={this.props.toggleShowMessageSellerModal}
-          >
-            Close
-          </Button>
-        </Modal.Footer>
+      <Modal show={this.props.showMessageSellerModal} centered>
+        <Modal.Header
+          closeButton
+          onClick={this.props.toggleShowMessageSellerModal}
+          className='messageSellerHeader'
+        >
+          Got questions? {this.props.seller} can help!
+        </Modal.Header>
+        <Modal.Body>
+          <Form inline>
+            <Form.Control
+              type='textarea'
+              placeholder='Write a message and hit enter to send'
+              rows='4'
+            />
+
+            <Button
+              className='sendMessage'
+              variant='link'
+              onClick={this.props.toggleShowMessageSellerModal}
+            >
+              <i class='fas fa-arrow-circle-right' />
+            </Button>
+          </Form>
+        </Modal.Body>
       </Modal>
     );
   }

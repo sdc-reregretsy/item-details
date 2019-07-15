@@ -65,6 +65,7 @@ class Title extends React.Component {
             <MessageSellerModal
               showMessageSellerModal={this.state.showMessageSellerModal}
               toggleShowMessageSellerModal={this.toggleShowMessageSellerModal}
+              seller={this.props.seller}
             />
           </span>
         </p>
@@ -114,6 +115,9 @@ class Title extends React.Component {
         <AddToCartModal
           showAddToCartModal={this.state.showAddToCartModal}
           toggleShowAddToCartModal={this.toggleShowAddToCartModal}
+          item={this.props.title}
+          cartImage={this.props.cartImage}
+          price={this.props.price}
         />
       </div>
     );
