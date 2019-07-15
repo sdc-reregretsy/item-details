@@ -18,6 +18,7 @@
 ## Usage
 
 > Some usage instructions:
+
 > npm install
 > Start server with following: npm run server-dev
 > Navigate to site by going to localhost:3001 (port subject to change)
@@ -34,4 +35,3 @@
 From within the root directory:
 
 > npm install
-> npm install webpack

@@ -27,6 +27,7 @@ class Title extends React.Component {
       showMessageSellerModal: !this.state.showMessageSellerModal
     });
   }
+
   toggleShowBuyItNowModal() {
     this.setState({ showBuyItNowModal: !this.state.showBuyItNowModal });
   }
@@ -34,6 +35,7 @@ class Title extends React.Component {
   toggleShowAddToCartModal() {
     this.setState({ showAddToCartModal: !this.state.showAddToCartModal });
   }
+
   render() {
     return (
       <div>

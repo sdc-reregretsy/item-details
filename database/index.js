@@ -22,7 +22,7 @@ const seedDBItems = function(data) {
         if (error) {
           console.log('Error in seedDB: ', error);
         } else {
-          console.log('DB seeded!');
+          console.log('DB seeded!', results);
         }
       }
     );
