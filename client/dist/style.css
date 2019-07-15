@@ -138,10 +138,37 @@ button {
   padding: 18px;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-right: 40px;
   font-size: 20px;
   font-weight: 900;
   font-family: 'Literata', serif;
+}
+
+.messageSellerHeader {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e3df;
+  position: relative;
+  padding: 18px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.sendMessage {
+  color: #222;
+  font-size: 30px;
+  text-align: right;
+}
+
+.form-inline {
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.form-control {
+  width: 90% !important;
 }
 
 .paymentMethod {

@@ -65,6 +65,7 @@ class Title extends React.Component {
             <MessageSellerModal
               showMessageSellerModal={this.state.showMessageSellerModal}
               toggleShowMessageSellerModal={this.toggleShowMessageSellerModal}
+              seller={this.props.seller}
             />
           </span>
         </p>
