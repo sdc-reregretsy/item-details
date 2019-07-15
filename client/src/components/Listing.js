@@ -9,17 +9,15 @@ class Listing extends React.Component {
     super(props);
 
     this.state = {
-      // Hardcoded itemData that corresponds to hardcoded photo for initial state
-      item_id: 719445611,
-      title: 'Vintage Garden Book (1968)',
-      description:
-        'Better Homes and Gardens’ NEW GARDEN BOOK. Item is in excellent condition filled with beautiful vintage photos and excellent gardening tips. Such a dreamy housewarming gift! \n\nPublished in New York by Meredith Corporation 1968.',
-      price: '16.00',
-      quantity: 1,
-      seller: 'FoundFauna',
-      avgRating: 5,
-      cartImage:
-        'https://i.etsystatic.com/19866202/d/il/9db3c0/1981665817/il_170x135.1981665817_mjym.jpg?version=0'
+      item_id: null,
+      title: '',
+      description: '',
+      price: '',
+      quantity: 0,
+      seller: '',
+      avgRating: 0,
+      cartImage: '',
+      mainImage: ''
     };
 
     this.fetchItem = this.fetchItem.bind(this);
@@ -147,7 +145,8 @@ class Listing extends React.Component {
           quantity: response.data[0].quantity,
           seller: response.data[0].seller,
           avgRating: response.data[0].avgRating,
-          cartImage: response.data[0].cartImage
+          cartImage: response.data[0].cartImage,
+          mainImage: response.data[0].mainImage
         });
       })
       .catch(err => console.log('error in fetchItem: ', err));
@@ -159,10 +158,7 @@ class Listing extends React.Component {
         <Container>
           <Row>
             <Col lg={8}>
-              <Image
-                src='https://i.etsystatic.com/19866202/r/il/9db3c0/1981665817/il_fullxfull.1981665817_mjym.jpg'
-                fluid
-              />
+              <Image src={this.state.mainImage} fluid />
             </Col>
             <Col lg={4}>
               <Title
