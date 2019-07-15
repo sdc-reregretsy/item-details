@@ -244,6 +244,7 @@ button {
 
 .hasBeenAdded {
   margin-top: 20px;
+  text-align: center;
 }
 
 .proceedAddToCart {
@@ -321,10 +322,10 @@ button {
   white-space: pre-wrap;
 }
 
-.bolded {
+/* .bolded {
   font-size: 15.5px;
-  font-weight: 500;
-}
+  font-weight: bold;
+} */
 
 a {
   text-decoration: underline;

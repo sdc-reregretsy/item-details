@@ -116,6 +116,7 @@ class Title extends React.Component {
           toggleShowAddToCartModal={this.toggleShowAddToCartModal}
           item={this.props.title}
           cartImage={this.props.cartImage}
+          price={this.props.price}
         />
       </div>
     );
