@@ -1,28 +1,70 @@
 import React from 'react';
+import { Container, Row, Button, Collapse } from 'react-bootstrap';
 
-const Details = props => {
-  return (
-    <div>
-      <hr />
-      <h1 className='itemDetails'>Item details</h1>
-      <p className='description'>{props.description}</p>
-      <hr />
-      <h1 className='shipping'>Shipping & policies</h1>
-      <div className='shippingInfo'>
-        <div>
-          Get it fast! Ready to ship in 1–2 business days.
-          <br />
-          From United States
+class Details extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      readMore: !open
+    };
+
+    this.toggleReadMore = this.toggleReadMore.bind(this);
+  }
+
+  toggleReadMore() {
+    this.setState({
+      readMore: !this.state.readMore
+    });
+  }
+
+  render() {
+    const props = this.props;
+
+    return (
+      <div>
+        <div className='itemDetailsBox'>
+          <hr />
+          <h1 className='itemDetails'>Item details</h1>
+          <div>
+            {props.description.length < 500 && (
+              <div className='description'> {props.description}</div>
+            )}
+            {props.description.length > 500 && (
+              <div>
+                <div className='readMoreText'> {props.description}</div>
+                <Button
+                  onClick={this.toggleReadMore}
+                  aria-controls='example-collapse-text'
+                  aria-expanded={open}
+                  variant='Link'
+                  className='learnMore'
+                >
+                  + Learn more about this item
+                </Button>
+                <Collapse in={this.state.readMore}>
+                  <div className='description'> {props.description}</div>
+                </Collapse>
+              </div>
+            )}
+          </div>
         </div>
-        <p>No returns or exchanges</p>
-        <p>But please contact me if you have any problems with your order.</p>
-        <a href='#'>Get shipping cost</a>
-        <br />
-        <a href='#'>View shop policies</a>
+        <hr />
+        <h1 className='shipping'>Shipping & policies</h1>
+        <div className='shippingInfo'>
+          <div>
+            Get it fast! Ready to ship in 1–2 business days.
+            <br />
+            From United States
+          </div>
+          <p>No returns or exchanges</p>
+          <p>But please contact me if you have any problems with your order.</p>
+          <a href='#'>Get shipping cost</a>
+          <br />
+          <a href='#'>View shop policies</a>
+        </div>
+        <hr />
       </div>
-      <hr />
-    </div>
-  );
-};
-
+    );
+  }
+}
 export default Details;
