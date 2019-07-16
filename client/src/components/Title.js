@@ -40,7 +40,7 @@ class Title extends React.Component {
     return (
       <div>
         <p>
-          <span className='seller'>{this.props.seller}</span>
+          <span className='seller'>{this.props.sellerHandle}</span>
           <span>
             <Rating
               className='stars'
@@ -67,7 +67,9 @@ class Title extends React.Component {
             <MessageSellerModal
               showMessageSellerModal={this.state.showMessageSellerModal}
               toggleShowMessageSellerModal={this.toggleShowMessageSellerModal}
-              seller={this.props.seller}
+              sellerName={this.props.sellerName}
+              sellerAvatar={this.props.sellerAvatar}
+              sellerHandle={this.props.sellerHandle}
             />
           </span>
         </p>

@@ -135,8 +135,28 @@ button {
   padding: 18px;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.typicallyResponds {
+  font-size: 12.5px;
+  font-weight: normal;
   font-family: 'Rubik', sans-serif;
+}
+
+.messageSellerAvatar {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.gotQuestions {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .sendMessage {
