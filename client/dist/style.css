@@ -477,8 +477,3 @@
   outline: none !important;
   outline-offset: none !important;
 }
-
-a {
-  text-decoration: underline;
-  color: #222;
-}
