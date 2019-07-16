@@ -41,6 +41,7 @@ class MessageSellerModal extends React.Component {
             inline
             onSubmit={() => {
               event.preventDefault();
+              this.props.toggleShowMessageSellerModal();
             }}
           >
             <Form.Control

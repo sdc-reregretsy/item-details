@@ -108,10 +108,8 @@ class Title extends React.Component {
         />
         <Button
           className='addToCartBtn'
-          variant='dark'
-          size='sm'
+          variant='secondary'
           block
-          active
           onClick={this.toggleShowAddToCartModal}
         >
           Add to cart
