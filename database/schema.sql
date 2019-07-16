@@ -10,7 +10,9 @@ CREATE TABLE items (
     description TEXT,
     price VARCHAR(20),
     quantity INT,
-    seller VARCHAR(500),
+    sellerName VARCHAR(500),
+    sellerUsername VARCHAR(500),
+    sellerAvatar VARCHAR(500),
     avgRating INT,
     cartImage VARCHAR(500),
     mainImage VARCHAR(500)

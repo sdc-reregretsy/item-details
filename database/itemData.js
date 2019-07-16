@@ -217,10 +217,12 @@ const itemData = {
       price: '6.99',
       currency_code: 'USD',
       quantity: 99,
-      shipping_info: "Ready to ship in 1–3 business days\n\nFrom Canada\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.",
-      option_color: "Font Styles",
+      shipping_info:
+        'Ready to ship in 1–3 business days\n\nFrom Canada\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      option_color: 'Font Styles',
       option_color_choices: [01, 02, 03, 04],
-      personalization: "Add your personalization\n\nPlease leave the name you would like to have on labels.",
+      personalization:
+        'Add your personalization\n\nPlease leave the name you would like to have on labels.',
       sku: [],
       tags: [
         'daycare labels',
@@ -318,9 +320,10 @@ const itemData = {
       price: '19.95',
       currency_code: 'USD',
       quantity: 6,
-      shipping_info: "Get it fast! Ready to ship in 1–2 business days.\n\nFrom United States",
-      option_size: "Necklace length",
-      option_size_choices: ["16 inches", "18 inches", "20 inches"],
+      shipping_info:
+        'Get it fast! Ready to ship in 1–2 business days.\n\nFrom United States',
+      option_size: 'Necklace length',
+      option_size_choices: ['16 inches', '18 inches', '20 inches'],
       sku: [],
       tags: [
         'necklace',
@@ -412,7 +415,8 @@ const itemData = {
       price: '2.99',
       currency_code: 'USD',
       quantity: 1,
-      shipping_info: "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
+      shipping_info:
+        "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
       sku: [],
       tags: [
         'heart shape',
@@ -506,7 +510,8 @@ const itemData = {
       price: '1.99',
       currency_code: 'USD',
       quantity: 1,
-      shipping_info: "Get it fast! Ready to ship in 1 business day.\n\nFrom Apex, NC\n\nReturns and exchanges accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Get it fast! Ready to ship in 1 business day.\n\nFrom Apex, NC\n\nReturns and exchanges accepted\n\nExceptions may apply.',
       sku: [],
       tags: [
         'Replacement China',
@@ -607,7 +612,8 @@ const itemData = {
       price: '275.00',
       currency_code: 'USD',
       quantity: 1,
-      shipping_info: "Get it fast! Ready to ship in 1 business day.\n\nFrom United States\n\nFree shipping to United States",
+      shipping_info:
+        'Get it fast! Ready to ship in 1 business day.\n\nFrom United States\n\nFree shipping to United States',
       sku: [],
       tags: [],
       category_path: ['Supplies'],
@@ -693,7 +699,8 @@ const itemData = {
       price: '13.99',
       currency_code: 'USD',
       quantity: 20,
-      shipping_info: "Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nFree shipping to United States\n\nReturns accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nFree shipping to United States\n\nReturns accepted\n\nExceptions may apply.',
       sku: [],
       tags: [
         'natural',
@@ -793,9 +800,10 @@ const itemData = {
       price: '15.75',
       currency_code: 'USD',
       quantity: 3,
-      shipping_info: "Ready to ship in 3–5 business days\n\nFrom United States\n\nReturns accepted\n\nExceptions may apply.",
-      option_size: "Length",
-      option_size_choices: ["5 feet", "7 feet", "10 feet"],
+      shipping_info:
+        'Ready to ship in 3–5 business days\n\nFrom United States\n\nReturns accepted\n\nExceptions may apply.',
+      option_size: 'Length',
+      option_size_choices: ['5 feet', '7 feet', '10 feet'],
       sku: ['117'],
       tags: [
         'felt  ball garland',
@@ -888,9 +896,9 @@ const itemData = {
       price: '11.50',
       currency_code: 'USD',
       quantity: 999,
-      shipping_info: "Ready to ship in 2–7 business days\n\nFrom United States",
-      option_size: "Select size",
-      option_size_choices: ["S", "M", "L"],
+      shipping_info: 'Ready to ship in 2–7 business days\n\nFrom United States',
+      option_size: 'Select size',
+      option_size_choices: ['S', 'M', 'L'],
       sku: [],
       tags: [
         'senoritas shirt',
@@ -989,10 +997,19 @@ const itemData = {
       price: '2.50',
       currency_code: 'GBP',
       quantity: 254,
-      shipping_info: "Ready to ship in 1–2 business days\n\nFrom United Kingdom\n\nReturns and exchanges accepted\n\nExceptions may apply.",
-      option_color: "Colour",
-      option_color_choices: ["Black", "Turquoise", "Lavender", "Pink", "Red", "Yellow"],
-      personalization: "Add your personalization\n\nPlease enter the name you would like to appear on the backing card - we will automatically put 'Congratulations'",
+      shipping_info:
+        'Ready to ship in 1–2 business days\n\nFrom United Kingdom\n\nReturns and exchanges accepted\n\nExceptions may apply.',
+      option_color: 'Colour',
+      option_color_choices: [
+        'Black',
+        'Turquoise',
+        'Lavender',
+        'Pink',
+        'Red',
+        'Yellow'
+      ],
+      personalization:
+        "Add your personalization\n\nPlease enter the name you would like to appear on the backing card - we will automatically put 'Congratulations'",
       sku: [
         '1151-1',
         '1151-5',
@@ -1097,7 +1114,8 @@ const itemData = {
       price: '2.00',
       currency_code: 'USD',
       quantity: 28,
-      shipping_info: "Get it fast! Ready to ship in 1–2 business days.\n\nFrom Whittier, CA\n\nReturns and exchanges accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Get it fast! Ready to ship in 1–2 business days.\n\nFrom Whittier, CA\n\nReturns and exchanges accepted\n\nExceptions may apply.',
       sku: [],
       tags: [
         'coconut oil',
@@ -1191,7 +1209,8 @@ const itemData = {
       price: '2.50',
       currency_code: 'USD',
       quantity: 998,
-      shipping_info: "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
+      shipping_info:
+        "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
       sku: [],
       tags: [
         'Love',
@@ -1289,7 +1308,8 @@ const itemData = {
       price: '2.95',
       currency_code: 'USD',
       quantity: 2,
-      shipping_info: "Ready to ship in 1–5 business days\n\nFrom New Zealand\n\nReturns and exchanges accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Ready to ship in 1–5 business days\n\nFrom New Zealand\n\nReturns and exchanges accepted\n\nExceptions may apply.',
       sku: ['NPD3'],
       tags: [
         'filofax plum kikki k',
@@ -1388,7 +1408,8 @@ const itemData = {
       price: '6.90',
       currency_code: 'EUR',
       quantity: 80,
-      shipping_info: "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
+      shipping_info:
+        "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order. See return policy",
       sku: [],
       tags: [
         'Blush Pink Leaves',
@@ -1482,7 +1503,8 @@ const itemData = {
       price: '40.00',
       currency_code: 'USD',
       quantity: 3,
-      shipping_info: "Ready to ship in 3–5 business days\n\nFrom United States\n\nReturns and exchanges accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Ready to ship in 3–5 business days\n\nFrom United States\n\nReturns and exchanges accepted\n\nExceptions may apply.',
       sku: [],
       tags: [
         'Amethyst',
@@ -1590,7 +1612,8 @@ const itemData = {
       price: '4.99',
       currency_code: 'USD',
       quantity: 1,
-      shipping_info: 'Get it fast! Ready to ship in 1–2 business days.\n\nFrom Princeton Junction, NJ\n\nReturns accepted\n\nExceptions may apply.',
+      shipping_info:
+        'Get it fast! Ready to ship in 1–2 business days.\n\nFrom Princeton Junction, NJ\n\nReturns accepted\n\nExceptions may apply.',
       sku: [],
       tags: [
         'lemon earrings',
@@ -1683,7 +1706,8 @@ const itemData = {
       price: '69.00',
       currency_code: 'USD',
       quantity: 1,
-      shipping_info: "Get it fast! Ready to ship in 1–2 business days.\n\nFrom United States\n\nReturns and exchanges accepted\n\nExceptions may apply.",
+      shipping_info:
+        'Get it fast! Ready to ship in 1–2 business days.\n\nFrom United States\n\nReturns and exchanges accepted\n\nExceptions may apply.',
       sku: ['CQH1'],
       tags: [
         'Heart',
@@ -1770,7 +1794,8 @@ const itemData = {
       price: '27.99',
       currency_code: 'USD',
       quantity: 33,
-      shipping_info: 'Ready to ship in 3–7 business days\n\nFrom United States\n\nFree shipping to United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      shipping_info:
+        'Ready to ship in 3–7 business days\n\nFrom United States\n\nFree shipping to United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
       option_size: 'Size',
       option_size_choices: ['S', 'M', 'L', 'XL'],
       sku: ['P0363-T1-N010'],
@@ -1871,8 +1896,10 @@ const itemData = {
       price: '30.00',
       currency_code: 'USD',
       quantity: 41,
-      shipping_info: 'Ready to ship in 2–3 weeks\n\nFrom Lincoln, NE\n\nReturns and exchanges accepted\n\nExceptions may apply.\n\nGift wrapping available',
-      personalization: "Add your personalization\n\nEnter your personalization information here, if you would not like personalization type None. Thanks:)",
+      shipping_info:
+        'Ready to ship in 2–3 weeks\n\nFrom Lincoln, NE\n\nReturns and exchanges accepted\n\nExceptions may apply.\n\nGift wrapping available',
+      personalization:
+        'Add your personalization\n\nEnter your personalization information here, if you would not like personalization type None. Thanks:)',
       sku: [],
       tags: [
         'Cute Little Journal',
@@ -1974,7 +2001,8 @@ const itemData = {
       price: '7.50',
       currency_code: 'USD',
       quantity: 791,
-      shipping_info: 'Your files will be available to download once payment is confirmed.\n\nI don\'t accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order.',
+      shipping_info:
+        "Your files will be available to download once payment is confirmed.\n\nI don't accept returns, exchanges, or cancellations\n\nBut please contact me if you have any problems with your order.",
       sku: [],
       tags: [
         'baby crochet pdf',
@@ -2068,9 +2096,10 @@ const itemData = {
       price: '24.99',
       currency_code: 'USD',
       quantity: 143,
-      shipping_info: 'Ready to ship in 2–5 business days\n\nFrom Runnemede, NJ\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
-      option_color: "Design Style",
-      option_color_choices: ["First Day Sign", "Last Day Sign"],
+      shipping_info:
+        'Ready to ship in 2–5 business days\n\nFrom Runnemede, NJ\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      option_color: 'Design Style',
+      option_color_choices: ['First Day Sign', 'Last Day Sign'],
       sku: [],
       tags: [
         'Reusable First And',
@@ -2164,7 +2193,8 @@ const itemData = {
       price: '3.00',
       currency_code: 'USD',
       quantity: 77,
-      shipping_info: 'Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      shipping_info:
+        'Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
       sku: [],
       tags: [
         'baseball lover',
@@ -2263,8 +2293,9 @@ const itemData = {
       price: '8.49',
       currency_code: 'EUR',
       quantity: 10,
-      shipping_info: 'Ready to ship in 1–3 business days\n\nFrom Slovenia\n\nReturns accepted\n\nExceptions may apply.',
-      personalization: "Add your personalization\n\nEnter the name",
+      shipping_info:
+        'Ready to ship in 1–3 business days\n\nFrom Slovenia\n\nReturns accepted\n\nExceptions may apply.',
+      personalization: 'Add your personalization\n\nEnter the name',
       sku: [],
       tags: [
         'children',
@@ -2357,7 +2388,8 @@ const itemData = {
       price: '2.40',
       currency_code: 'EUR',
       quantity: 1,
-      shipping_info: 'Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      shipping_info:
+        'Get it fast! Ready to ship in 1–3 business days.\n\nFrom United States\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
       sku: [],
       tags: [
         'Card Making Supplies',
@@ -2456,7 +2488,8 @@ const itemData = {
       price: '7.95',
       currency_code: 'USD',
       quantity: 10,
-      shipping_info: 'Ready to ship in 3–5 business days\n\nFrom Phillipsburg, NJ\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
+      shipping_info:
+        'Ready to ship in 3–5 business days\n\nFrom Phillipsburg, NJ\n\nNo returns or exchanges\n\nBut please contact me if you have any problems with your order.',
       option_color: 'Pattern',
       option_color_options: ['Menorah', 'Star of David'],
       sku: [],
@@ -9702,3 +9735,15 @@ const itemData = {
 };
 
 module.exports = { itemData };
+
+// const getItemIdandPhotoforCharles = data => {
+//   return data.results.map(item => {
+//     return {
+//       listing_id: item.listing_id,
+//       reviewItemPhoto: item.MainImage.url_75x75,
+//       title: item.title
+//     };
+//   });
+// };
+
+// console.log(getItemIdandPhotoforCharles(itemData));

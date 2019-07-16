@@ -16,7 +16,9 @@ class Listing extends React.Component {
       description: '',
       price: '',
       quantity: 0,
-      seller: '',
+      sellerName: '',
+      sellerHandle: '',
+      sellerAvatar: '',
       avgRating: 0,
       cartImage: '',
       mainImage: ''
@@ -145,7 +147,9 @@ class Listing extends React.Component {
           description: response.data[0].description,
           price: response.data[0].price,
           quantity: response.data[0].quantity,
-          seller: response.data[0].seller,
+          sellerName: response.data[0].sellerName,
+          sellerHandle: response.data[0].sellerUsername,
+          sellerAvatar: response.data[0].sellerAvatar,
           avgRating: response.data[0].avgRating,
           cartImage: response.data[0].cartImage,
           mainImage: response.data[0].mainImage
@@ -168,7 +172,9 @@ class Listing extends React.Component {
             </Col>
             <Col lg={4}>
               <Title
-                seller={this.state.seller}
+                sellerName={this.state.sellerName}
+                sellerHandle={this.state.sellerHandle}
+                sellerAvatar={this.state.sellerAvatar}
                 title={this.state.title}
                 price={this.state.price}
                 avgRating={this.state.avgRating}

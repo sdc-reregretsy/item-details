@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Form, Col } from 'react-bootstrap';
+import { Button, Modal, Form, Image, Row, Col } from 'react-bootstrap';
 
 class MessageSellerModal extends React.Component {
   constructor(props) {
@@ -14,13 +14,34 @@ class MessageSellerModal extends React.Component {
           onClick={this.props.toggleShowMessageSellerModal}
           className='messageSellerHeader'
         >
-          Got questions? {this.props.seller} can help!
+          <Row>
+            <Col lg={2}>
+              <Image
+                className='messageSellerAvatar'
+                src={this.props.sellerAvatar}
+                roundedCircle
+                fluid
+              />
+            </Col>
+            <Col lg={8}>
+              <Row>
+                {this.props.sellerName} from {this.props.sellerHandle}
+              </Row>
+              <Row className='typicallyResponds'>
+                Typically responds within a few hours
+              </Row>
+            </Col>
+          </Row>
         </Modal.Header>
         <Modal.Body>
+          <div className='gotQuestions'>
+            Got questions? {this.props.sellerName} can help!
+          </div>
           <Form
             inline
             onSubmit={() => {
               event.preventDefault();
+              this.props.toggleShowMessageSellerModal();
             }}
           >
             <Form.Control
@@ -28,7 +49,6 @@ class MessageSellerModal extends React.Component {
               placeholder='Write a message and hit enter to send'
               rows='4'
             />
-
             <Button
               className='sendMessage'
               variant='link'

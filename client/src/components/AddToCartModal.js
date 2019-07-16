@@ -44,7 +44,7 @@ class AddToCartModal extends React.Component {
           </Button>
           <Button
             className='continueShopping'
-            variant='outline-primary'
+            variant='light'
             onClick={this.props.toggleShowAddToCartModal}
           >
             Continue Shopping

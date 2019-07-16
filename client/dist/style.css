@@ -49,12 +49,25 @@
 .messageBtn {
   float: right;
   margin-bottom: 12px;
-  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500px;
   color: #222;
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15);
   height: 28px;
   padding: 4px 12px;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+.btn-outline-secondary:hover {
+  background: #eeeeee;
+  color: #222;
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .quantity {
@@ -97,8 +110,7 @@ button {
   -webkit-appearance: none;
 }
 
-.buyBtn,
-.addToCartBtn {
+.buyBtn {
   font-size: 15px;
   line-height: 1.2;
   border-color: #222222;
@@ -109,6 +121,41 @@ button {
   margin-bottom: 12px;
   padding: 8px 12px;
   height: 38px;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  background: none;
+}
+
+.addToCartBtn {
+  font-size: 15px;
+  line-height: 1.2;
+  border-color: #222222;
+  border-width: 2px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #222;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  height: 38px;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+.btn-outline-dark:hover {
+  background: #222;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #3d3d3d;
+  color: #fff;
 }
 
 .buyNowHeader,
@@ -135,14 +182,38 @@ button {
   padding: 18px;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.typicallyResponds {
+  font-size: 12.5px;
+  font-weight: normal;
   font-family: 'Rubik', sans-serif;
+}
+
+.messageSellerAvatar {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.gotQuestions {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .sendMessage {
   color: #222;
   font-size: 30px;
   text-align: right;
+}
+
+.sendMessage:hover {
+  color: #222;
 }
 
 .form-inline {
@@ -249,12 +320,7 @@ button {
 }
 
 .itemInCart {
-  font-weight: bold;
-}
-
-.hasBeenAdded {
-  margin-top: 20px;
-  text-align: center;
+  font-size: 18px;
 }
 
 .proceedAddToCart {
@@ -309,6 +375,10 @@ button {
 
 .continueShopping:hover {
   text-decoration: none;
+  background-color: #faa077;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  color: #fff;
 }
 
 .itemDetails,
