@@ -1,4 +1,5 @@
-.seller {
+/* Seller Handle in Title.js */
+.sellerHandle {
   color: #757575;
   text-decoration: none;
   margin-top: 20px;
@@ -10,18 +11,20 @@
   text-align: left;
 }
 
-.seller:hover {
+.sellerHandle:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
+/* Average Review Rating Stars in Title.js */
 .stars {
   font-size: 9px;
   color: black;
   margin-top: 20px;
 }
 
-.title {
+/* Item title(name) in Title.js */
+.itemTitle {
   font-family: 'Literata', serif;
   font-size: 20px;
   color: #333;
@@ -30,12 +33,14 @@
   margin-bottom: 12px;
 }
 
+/* Price in Title.js */
 .price {
   color: #222222;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
 
+/* Background for all Modals */
 .modal-backdrop {
   opacity: 0;
   transition: opacity 0.4s;
@@ -46,7 +51,8 @@
   background: #dddddd;
 }
 
-.messageBtn {
+/* Message Seller button */
+.messageSellerBtn {
   float: right;
   margin-bottom: 12px;
   font-family: 'Roboto', sans-serif;
@@ -64,19 +70,21 @@
   -webkit-appearance: none;
 }
 
+/* Message Seller button */
 .btn-outline-secondary:hover {
   background: #eeeeee;
   color: #222;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
+/* Select quantity in Title.js */
 .quantity {
   font-family: 'Rubik', sans-serif;
   font-size: 15.5px;
   margin-bottom: 6px;
 }
 
-.quantityBtn {
+.selectQuantityBtn {
   background-color: #fff;
   border-radius: 3px;
   border-color: rgba(0, 0, 0, 0.15);
@@ -102,15 +110,8 @@
   margin-bottom: 12px;
 }
 
-button {
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  color: #222;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: none;
-}
-
-.buyBtn {
+/* Buy it now button in Title.js */
+.buyNowBtn {
   font-size: 15px;
   line-height: 1.2;
   border-color: #222222;
@@ -129,6 +130,13 @@ button {
   background: none;
 }
 
+/* Buy it now button */
+.btn-outline-dark:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Add to cart button in Title.js */
 .addToCartBtn {
   font-size: 15px;
   line-height: 1.2;
@@ -148,16 +156,7 @@ button {
   -webkit-appearance: none;
 }
 
-.btn-outline-dark:hover {
-  background: #222;
-  color: #fff;
-}
-
-.btn-dark:hover {
-  background: #3d3d3d;
-  color: #fff;
-}
-
+/* Buy it now and Add to cart modal headers */
 .buyNowHeader,
 .addToCartHeader {
   border-top-right-radius: 3px;
@@ -173,6 +172,7 @@ button {
   font-family: 'Literata', serif;
 }
 
+/* Message seller modal header */
 .messageSellerHeader {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -189,6 +189,7 @@ button {
   text-align: left;
 }
 
+/* 'Typically responds within a few hours' text in Message Seller modal header */
 .typicallyResponds {
   font-size: 12.5px;
   font-weight: normal;
@@ -200,12 +201,14 @@ button {
   line-height: 1.4;
 }
 
+/* Message seller modal body */
 .gotQuestions {
   font-size: 14px;
   text-align: center;
   margin-bottom: 150px;
 }
 
+/* Message seller input and send arrow button */
 .sendMessage {
   color: #222;
   font-size: 30px;
@@ -225,6 +228,7 @@ button {
   width: 90% !important;
 }
 
+/* Buy it now modal body */
 .paymentMethod {
   margin-top: 8px;
   padding-left: 0px;
@@ -274,6 +278,7 @@ button {
   margin-left: 3px;
 }
 
+/* Buy it now modal proceed to checkout button */
 .proceedCheckout {
   width: 100%;
   background-color: #222222;
@@ -300,6 +305,7 @@ button {
   cursor: default;
 }
 
+/* Add to cart modal body */
 .addToCartBody {
   font-family: 'Rubik', sans-serif;
   margin-top: 8px;
@@ -323,6 +329,7 @@ button {
   font-size: 18px;
 }
 
+/* Proceed to checkout button in Add to cart modal */
 .proceedAddToCart {
   background-color: #222222;
   margin-bottom: 0;
@@ -348,6 +355,7 @@ button {
   cursor: default;
 }
 
+/* Continue shopping button in Add to cart modal */
 .continueShopping {
   background-color: #f45800;
   margin-bottom: 0;
@@ -381,6 +389,20 @@ button {
   color: #fff;
 }
 
+/* Item Details & Shipping */
+.itemDetailsBox {
+  box-sizing: border-box;
+  height: 60%;
+  width: 90%;
+  overflow: hidden;
+}
+
+.itemDetailsBox:after {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
 .itemDetails,
 .shipping {
   color: #222222;
@@ -392,14 +414,68 @@ button {
 }
 
 .description,
-.shippingInfo {
+.shippingInfo,
+.readMoreText {
   color: #222222;
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
 }
 
-.description {
+.description,
+.readMoreText {
   white-space: pre-wrap;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /* word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word; */
+  overflow: hidden;
+}
+
+.readMoreText:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -moz-linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -o-linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -ms-linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* Learn more about this item button */
+.learnMore {
+  color: #222 !important;
+  text-decoration: underline !important;
+  font-weight: 500;
+  font-size: 14.5px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.btn-link:active,
+.btn-link:focus {
+  outline: none !important;
+  outline-offset: none !important;
 }
 
 a {
