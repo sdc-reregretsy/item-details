@@ -45,21 +45,37 @@ class Details extends React.Component {
             {props.description.length < 500 && (
               <div className='description'> {props.description}</div>
             )}
+
             {props.description.length > 500 && (
               <div>
-                <div className='readMoreText'> {descriptionText}</div>
-                <Button
-                  onClick={this.toggleShowReadMore}
-                  aria-controls='example-collapse-text'
-                  aria-expanded={open}
-                  variant='Link'
-                  className='learnMore'
-                >
-                  + Learn more about this item
-                </Button>
-                <Collapse in={this.state.showReadMore}>
-                  <div className='description'> {readMoreText}</div>
-                </Collapse>
+                {!this.state.clickedReadMore && (
+                  <div>
+                    <div className='readMoreText'> {descriptionText}</div>
+                    <Button
+                      onClick={() => {
+                        this.toggleShowReadMore();
+                        this.handleClickonReadMore();
+                      }}
+                      aria-controls='example-collapse-text'
+                      aria-expanded={open}
+                      variant='Link'
+                      className='learnMore'
+                    >
+                      + Learn more about this item
+                    </Button>
+                    <Collapse in={this.state.showReadMore}>
+                      <div className='description'> {readMoreText}</div>
+                    </Collapse>
+                  </div>
+                )}
+                {this.state.clickedReadMore && (
+                  <div>
+                    <div className='description'> {descriptionText}</div>
+                    <Collapse in={this.state.showReadMore}>
+                      <div className='description'> {readMoreText}</div>
+                    </Collapse>
+                  </div>
+                )}
               </div>
             )}
           </div>

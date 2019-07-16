@@ -133,14 +133,14 @@ class Listing extends React.Component {
     ];
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
-    this.fetchItem(id);
+    this.fetchItem(294523241);
   }
 
   fetchItem(id) {
     axios
       .get(`/details/${id}`)
       .then(response => {
-        // console.log('fetchItem: ', response.data[0]);
+        console.log('fetchItem: ', response.data[0]);
         this.setState({
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
