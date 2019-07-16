@@ -17,6 +17,7 @@ app.use(cors());
 
 app.get('/details/:id', (req, res) => {
   db.retrieveItem(req.params.id, response => {
+    console.log(response[0].data);
     res.send(response);
   });
 });
