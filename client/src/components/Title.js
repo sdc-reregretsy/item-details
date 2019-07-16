@@ -40,7 +40,7 @@ class Title extends React.Component {
     return (
       <div>
         <p>
-          <span className='seller'>{this.props.sellerHandle}</span>
+          <span className='sellerHandle'>{this.props.sellerHandle}</span>
           <span>
             <Rating
               className='stars'
@@ -52,12 +52,12 @@ class Title extends React.Component {
           </span>
         </p>
         <p />
-        <h1 className='title'>{this.props.title}</h1>
+        <h1 className='itemTitle'>{this.props.title}</h1>
         <p>
           <span className='price'>${this.props.price}</span>
           <span>
             <Button
-              className='messageBtn'
+              className='messageSellerBtn'
               variant='outline-secondary'
               size='sm'
               onClick={this.toggleShowMessageSellerModal}
@@ -75,7 +75,7 @@ class Title extends React.Component {
         </p>
         <div className='select-wrapper'>
           <p className='quantity'>Quantity</p>
-          <select className='quantityBtn'>
+          <select className='selectQuantityBtn'>
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -94,7 +94,7 @@ class Title extends React.Component {
           </select>
         </div>
         <Button
-          className='buyBtn'
+          className='buyNowBtn'
           variant='outline-dark'
           size='sm'
           block
