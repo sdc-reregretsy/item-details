@@ -19,6 +19,14 @@ class Details extends React.Component {
 
   render() {
     const props = this.props;
+    let truncateText;
+    let descriptionText;
+    let readMoreText;
+    if (this.props.description.length > 500) {
+      truncateText = props.description;
+      descriptionText = truncateText.slice(0, 500);
+      readMoreText = truncateText.slice(500);
+    }
 
     return (
       <div>
@@ -31,7 +39,7 @@ class Details extends React.Component {
             )}
             {props.description.length > 500 && (
               <div>
-                <div className='readMoreText'> {props.description}</div>
+                <div className='readMoreText'> {descriptionText}</div>
                 <Button
                   onClick={this.toggleReadMore}
                   aria-controls='example-collapse-text'
@@ -42,7 +50,7 @@ class Details extends React.Component {
                   + Learn more about this item
                 </Button>
                 <Collapse in={this.state.readMore}>
-                  <div className='description'> {props.description}</div>
+                  <div className='description'> {readMoreText}</div>
                 </Collapse>
               </div>
             )}
