@@ -159,8 +159,9 @@ class Listing extends React.Component {
   }
 
   render() {
-    this.bc.onmessage = function(ev) {
-      console.log(ev);
+    this.bc.onmessage = ev => {
+      console.log(ev.data);
+      this.fetchItem(ev.data);
     };
 
     return (

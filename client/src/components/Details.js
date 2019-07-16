@@ -5,15 +5,23 @@ class Details extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      readMore: !open
+      showReadMore: !open,
+      clickedReadMore: false
     };
 
-    this.toggleReadMore = this.toggleReadMore.bind(this);
+    this.toggleShowReadMore = this.toggleShowReadMore.bind(this);
+    this.handleClickonReadMore = this.handleClickonReadMore.bind(this);
   }
 
-  toggleReadMore() {
+  toggleShowReadMore() {
     this.setState({
-      readMore: !this.state.readMore
+      showReadMore: !this.state.readMore
+    });
+  }
+
+  handleClickonReadMore() {
+    this.setState({
+      clickedReadMore: !this.state.clickedReadMore
     });
   }
 
@@ -41,7 +49,7 @@ class Details extends React.Component {
               <div>
                 <div className='readMoreText'> {descriptionText}</div>
                 <Button
-                  onClick={this.toggleReadMore}
+                  onClick={this.toggleShowReadMore}
                   aria-controls='example-collapse-text'
                   aria-expanded={open}
                   variant='Link'
@@ -49,7 +57,7 @@ class Details extends React.Component {
                 >
                   + Learn more about this item
                 </Button>
-                <Collapse in={this.state.readMore}>
+                <Collapse in={this.state.showReadMore}>
                   <div className='description'> {readMoreText}</div>
                 </Collapse>
               </div>
