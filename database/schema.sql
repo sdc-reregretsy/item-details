@@ -7,7 +7,7 @@ USE regretsy_items;
 CREATE TABLE items (
     listing_id BIGINT PRIMARY KEY,
     title VARCHAR(500),
-    description TEXT,
+    description TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
     price VARCHAR(20),
     quantity INT,
     sellerName VARCHAR(500),

@@ -419,6 +419,8 @@
   color: #222222;
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .description,
@@ -476,4 +478,10 @@
 .btn-link:focus {
   outline: none !important;
   outline-offset: none !important;
+}
+
+/* Get shipping cost and shop policies in Details.js */
+.getCostPolicies {
+  text-decoration: underline;
+  color: #222 !important;
 }

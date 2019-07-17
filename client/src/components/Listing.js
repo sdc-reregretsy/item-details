@@ -140,7 +140,7 @@ class Listing extends React.Component {
     axios
       .get(`/details/${id}`)
       .then(response => {
-        console.log('fetchItem: ', response.data[0]);
+        // console.log('fetchItem: ', response.data[0]);
         this.setState({
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
