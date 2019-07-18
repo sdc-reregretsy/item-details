@@ -3,6 +3,7 @@ import Title from './Title.js';
 import Details from './Details.js';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import axios from 'axios';
+import config from '../../../config.js';
 
 class Listing extends React.Component {
   constructor(props) {
@@ -134,13 +135,12 @@ class Listing extends React.Component {
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
     this.fetchItem(id);
+    this.bc.postMessage(id);
   }
 
   fetchItem(id) {
     axios
-      .get(
-        `http://regretsy-item-details.us-east-2.elasticbeanstalk.com/details/${id}`
-      )
+      .get(`${config.URL}/details/${id}`)
       .then(response => {
         console.log('fetchItem: ', response.data[0]);
         this.setState({
