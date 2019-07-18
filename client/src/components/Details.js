@@ -27,13 +27,9 @@ class Details extends React.Component {
 
   render() {
     const props = this.props;
-    let truncateText;
-    let descriptionText;
     let readMoreText;
-    if (this.props.description.length > 500) {
-      truncateText = props.description;
-      descriptionText = truncateText.slice(0, 500);
-      readMoreText = truncateText.slice(500);
+    if (props.description.length > 500) {
+      readMoreText = props.description.slice(0, 500);
     }
 
     return (
@@ -50,7 +46,7 @@ class Details extends React.Component {
               <div>
                 {!this.state.clickedReadMore && (
                   <div>
-                    <div className='readMoreText'> {descriptionText}</div>
+                    <div className='readMoreText'>{readMoreText}</div>
                     <Button
                       onClick={() => {
                         this.toggleShowReadMore();
@@ -64,15 +60,14 @@ class Details extends React.Component {
                       + Learn more about this item
                     </Button>
                     <Collapse in={this.state.showReadMore}>
-                      <div className='description'> {readMoreText}</div>
+                      <div />
                     </Collapse>
                   </div>
                 )}
-                {this.state.clickedReadMore && (
+                {props.description.length > 500 && this.state.clickedReadMore && (
                   <div>
-                    <div className='description'> {descriptionText}</div>
-                    <Collapse in={this.state.showReadMore}>
-                      <div className='description'> {props.description}</div>
+                    <Collapse in={props.description}>
+                      <div className='description'>{props.description}</div>
                     </Collapse>
                   </div>
                 )}
