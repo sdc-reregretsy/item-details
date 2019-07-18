@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const db = require('../database/index');
 const itemData = require('../database/itemData');
 const sellerData = require('../database/sellerData.js');
@@ -9,6 +10,7 @@ const app = express();
 app.use('/', express.static('./client/dist'));
 app.use(express.json());
 app.use(cors());
+app.use(compression());
 
 const PORT = port || 3001;
 const HOST = host || '0.0.0.0';
