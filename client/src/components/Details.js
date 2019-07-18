@@ -72,7 +72,7 @@ class Details extends React.Component {
                   <div>
                     <div className='description'> {descriptionText}</div>
                     <Collapse in={this.state.showReadMore}>
-                      <div className='description'> {readMoreText}</div>
+                      <div className='description'> {props.description}</div>
                     </Collapse>
                   </div>
                 )}
@@ -90,9 +90,13 @@ class Details extends React.Component {
           </div>
           <p>No returns or exchanges</p>
           <p>But please contact me if you have any problems with your order.</p>
-          <a href='#'>Get shipping cost</a>
+          <a href='#' className='getCostPolicies'>
+            Get shipping cost
+          </a>
           <br />
-          <a href='#'>View shop policies</a>
+          <a href='#' className='getCostPolicies'>
+            View shop policies
+          </a>
         </div>
         <hr />
       </div>

@@ -14,4 +14,14 @@ COPY . .
 
 EXPOSE 3001
 
-CMD [ "node", "server/server.js" ]
+CMD [ "node", "server/index.js" ]
+
+
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD password
+ENV MYSQL_DATABASE regretsy_items
+ENV MYSQL_USER root
+ENV MYSQL_PASSWORD password
+
+ADD database /schema.sql
