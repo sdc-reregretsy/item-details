@@ -45,6 +45,7 @@ class MessageSellerModal extends React.Component {
             }}
           >
             <Form.Control
+              className='messageInput'
               type='textarea'
               placeholder='Write a message and hit enter to send'
               rows='4'
