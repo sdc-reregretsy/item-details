@@ -45,6 +45,7 @@ class MessageSellerModal extends React.Component {
             }}
           >
             <Form.Control
+              className='messageInput'
               type='textarea'
               placeholder='Write a message and hit enter to send'
               rows='4'
@@ -54,7 +55,7 @@ class MessageSellerModal extends React.Component {
               variant='link'
               onClick={this.props.toggleShowMessageSellerModal}
             >
-              <i class='fas fa-arrow-circle-right' />
+              <i className='fas fa-arrow-circle-right' />
             </Button>
           </Form>
         </Modal.Body>

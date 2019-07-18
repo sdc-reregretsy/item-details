@@ -1,6 +1,13 @@
-var mysql = require('mysql');
+const mysql = require('mysql');
 const config = require('../config.js');
-var connection = mysql.createConnection(config.DBCONFIG);
+// const connection = mysql.createConnection(config.DBCONFIG);
+const connection = mysql.createConnection({
+  host: process.env.RDS_HOSTNAME,
+  user: process.env.RDS_USERNAME,
+  password: process.env.RDS_PASSWORD,
+  port: process.env.RDS_PORT,
+  database: process.env.RDS_DB_NAME
+});
 
 connection.connect(err => {
   if (err) {
@@ -9,6 +16,26 @@ connection.connect(err => {
     console.log('Database connected!');
   }
 });
+
+// connection.query(
+//   `CREATE TABLE items (
+//   listing_id BIGINT PRIMARY KEY,
+//   title VARCHAR(500),
+//   description TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+//   price VARCHAR(20),
+//   quantity INT,
+//   sellerName VARCHAR(500),
+//   sellerUsername VARCHAR(500),
+//   sellerAvatar VARCHAR(500),
+//   avgRating INT,
+//   cartImage VARCHAR(500),
+//   mainImage VARCHAR(500));`,
+//   function(err, results) {
+//     if (err) {
+//       console.log('error in creating table query ', err);
+//     }
+//   }
+// );
 
 const seedDBItems = function(data) {
   const inventory = data.itemData.results;
