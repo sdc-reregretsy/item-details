@@ -7,5 +7,6 @@ module.exports = {
     user: 'root',
     password: 'password',
     database: 'database_name'
-  }
+  },
+  URL: `http://exampleurl.com`
 };
