@@ -9,7 +9,8 @@ class Title extends React.Component {
   constructor(props) {
     super(props);
 
-    this.bc = new BroadcastChannel('added');
+    this.cartbc = new BroadcastChannel('added');
+    this.messagebc = new BroadcastChannel('message-seller');
 
     this.state = {
       showMessageSellerModal: false,
@@ -39,6 +40,10 @@ class Title extends React.Component {
   }
 
   render() {
+    this.cartbc.onmessage = ev => {
+      console.log('Incoming message seller request: ', ev.data);
+      this.toggleShowMessageSellerModal();
+    };
     return (
       <div>
         <p>
@@ -114,7 +119,7 @@ class Title extends React.Component {
           block
           onClick={() => {
             this.toggleShowAddToCartModal();
-            this.bc.postMessage('item added to cart!');
+            this.cartbc.postMessage('item added to cart!');
           }}
         >
           Add to cart
