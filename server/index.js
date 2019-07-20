@@ -21,7 +21,6 @@ const HOST = host || '0.0.0.0';
 
 app.get('/details/:id', (req, res) => {
   db.retrieveItem(req.params.id, response => {
-    console.log(response[0].data);
     res.send(response);
   });
 });

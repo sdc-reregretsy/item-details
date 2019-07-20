@@ -1,7 +1,8 @@
 import React from 'react';
 import Title from './Title.js';
 import Details from './Details.js';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import ImageCarousel from './ImageCarousel.js';
+import { Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import config from '../../../config.js';
 
@@ -134,15 +135,15 @@ class Listing extends React.Component {
     ];
 
     let id = ids[Math.floor(Math.random() * (101 - 1)) + 1];
-    this.fetchItem(id);
+    this.fetchItem(720334099);
     this.bc.postMessage(id);
   }
 
   fetchItem(id) {
     axios
-      .get(`${config.URL}/details/${id}`)
+      .get(`/details/${id}`)
       .then(response => {
-        console.log('fetchItem: ', response.data[0]);
+        console.log('Fetched item: ', response.data[0]);
         this.setState({
           item_id: response.data[0].listing_id,
           title: response.data[0].title,
@@ -162,7 +163,7 @@ class Listing extends React.Component {
 
   render() {
     this.bc.onmessage = ev => {
-      console.log(ev.data);
+      console.log('Incoming listing_id: ', ev.data);
       this.fetchItem(ev.data);
     };
 
@@ -171,7 +172,7 @@ class Listing extends React.Component {
         <Container>
           <Row>
             <Col lg={8}>
-              <Image src={this.state.mainImage} fluid />
+              <ImageCarousel mainImage={this.state.mainImage} />
             </Col>
             <Col lg={4}>
               <Title
