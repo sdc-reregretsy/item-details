@@ -9,6 +9,8 @@ class Title extends React.Component {
   constructor(props) {
     super(props);
 
+    this.bc = new BroadcastChannel('added');
+
     this.state = {
       showMessageSellerModal: false,
       showBuyItNowModal: false,
@@ -110,7 +112,10 @@ class Title extends React.Component {
           className='addToCartBtn'
           variant='secondary'
           block
-          onClick={this.toggleShowAddToCartModal}
+          onClick={() => {
+            this.toggleShowAddToCartModal();
+            this.bc.postMessage('item added to cart!');
+          }}
         >
           Add to cart
         </Button>
@@ -121,6 +126,15 @@ class Title extends React.Component {
           cartImage={this.props.cartImage}
           price={this.props.price}
         />
+        <div>
+          <span className='haveInCart'>
+            <i className='fas fa-shopping-cart' fluid />
+          </span>
+          <span className='others'>
+            <span className='otherPeopleWantThis'>Other people want this.</span>
+            7 people have this in their carts right now.
+          </span>
+        </div>
       </div>
     );
   }

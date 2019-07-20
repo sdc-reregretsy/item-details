@@ -171,6 +171,31 @@
   font-family: 'Literata', serif;
 }
 
+/* Other people have this in their shopping carts in Title.js */
+.others {
+  line-height: 1.4;
+  text-align: left;
+  margin-left: 6px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15.5px;
+}
+
+.otherPeopleWantThis {
+  line-height: 1.4;
+  text-align: left;
+  margin-left: 6px;
+  margin-right: 3px;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15.5px;
+}
+
+.haveInCart {
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: left;
+}
+
 /* Message seller modal header */
 .messageSellerHeader {
   border-top-right-radius: 3px;
