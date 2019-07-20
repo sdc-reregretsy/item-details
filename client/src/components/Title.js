@@ -126,15 +126,6 @@ class Title extends React.Component {
           cartImage={this.props.cartImage}
           price={this.props.price}
         />
-        <div>
-          <span className='haveInCart'>
-            <i className='fas fa-shopping-cart' fluid />
-          </span>
-          <span className='others'>
-            <span className='otherPeopleWantThis'>Other people want this.</span>
-            7 people have this in their carts right now.
-          </span>
-        </div>
       </div>
     );
   }
