@@ -40,7 +40,7 @@ class Title extends React.Component {
   }
 
   render() {
-    this.cartbc.onmessage = ev => {
+    this.messagebc.onmessage = ev => {
       console.log('Incoming message seller request: ', ev.data);
       this.toggleShowMessageSellerModal();
     };

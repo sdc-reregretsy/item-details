@@ -2,7 +2,7 @@
 .sellerHandle {
   color: #757575;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 0px;
   margin-right: 6px;
   font-family: 'Rubik', sans-serif;
@@ -20,7 +20,7 @@
 .stars {
   font-size: 9px;
   color: black;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 /* Item title(name) in Title.js */
