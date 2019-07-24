@@ -1,5 +1,8 @@
+const path = require('path');
+
 module.exports = {
-  entry: __dirname + '/client/src/index.js',
+  entry: path.resolve(__dirname, 'client/src/index.js'),
+  mode: 'production',
   module: {
     rules: [
       {
@@ -9,13 +12,13 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-react', '@babel/preset-env']
-          }
-        }
-      }
-    ]
+          },
+        },
+      },
+    ],
   },
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/client/dist'
-  }
+    path: path.resolve(__dirname, 'client/dist'),
+  },
 };
