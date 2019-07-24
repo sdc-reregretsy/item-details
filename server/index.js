@@ -7,13 +7,14 @@ const itemData = require('../database/itemData');
 const sellerData = require('../database/sellerData.js');
 const app = express();
 
+const PORT = process.env.SERVER_PORT;
+const HOST = process.env.SERVER_HOST;
+
 app.use('/', express.static('./client/dist'));
 app.use(express.json());
 app.use(cors());
 app.use(compression());
 
-const PORT = process.env.SERVER_PORT;
-const HOST = process.env.SERVER_HOST;
 
 app.get('/details/:id', (req, res) => {
   db.retrieveItem(req.params.id, (response) => {

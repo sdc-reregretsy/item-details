@@ -4,7 +4,6 @@ import Details from './Details.js';
 import ImageCarousel from './ImageCarousel.js';
 import { Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-import config from '../../../config.js';
 
 class Listing extends React.Component {
   constructor(props) {
