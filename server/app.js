@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 app.use(compression());
 
-// app.get('/details/:id', (req, res) => {
+// app.get('/products/:id', (req, res) => {
 //   db.retrieveItem(req.params.id, (response) => {
 //     res.send(response);
 //   });
