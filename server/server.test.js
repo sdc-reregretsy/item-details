@@ -18,3 +18,13 @@ describe('GET /', () => {
     expect(match).toBe(true);
   });
 });
+
+describe('POST /', () => {
+  let result;
+  beforeAll(async () => {
+    result = await request(app).post('/');
+  });
+
+  test('responds with status code of 404', () => expect(result.status)
+    .toBe(404));
+});
