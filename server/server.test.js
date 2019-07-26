@@ -94,7 +94,7 @@ describe('GET /products/{id}', () => {
 });
 
 describe('POST /products/{id}', () => {
-  const id = '0';
+  const id = '5';
   let result;
   beforeAll(async () => {
     result = await request(app).post(`/products/${id}`);
