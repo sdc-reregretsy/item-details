@@ -1,17 +1,12 @@
 const connection = require('./index');
 
-const retrieve = (id, callback) => {
-  connection.query(
-    `SELECT * FROM items WHERE listing_id=${id};`,
-    (error, results) => {
-      if (error) {
-        console.log('Error retrieving item: ', error);
-      } else {
-        console.log('Item retrieved:', results);
-        callback(results);
-      }
-    }
-  );
-};
+(async () => {
+  await connection.connect();
+})();
+
+const retrieve = id => connection.query(`SELECT * FROM products WHERE id='${id}'`)
+  .then(result => result)
+  .then(result => result.rows)
+  .catch(console.error);
 
 module.exports = { retrieve };
