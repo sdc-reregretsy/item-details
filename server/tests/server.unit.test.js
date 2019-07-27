@@ -1,8 +1,11 @@
 const request = require('supertest');
 const app = require('../app');
 
-jest.mock('../../database/index', () => ({
-  retrieveItem: (id, cb) => cb([{}]),
+jest.mock('../../database/methods', () => ({
+  retrieve: id => new Promise((resolve, reject) => {
+    resolve({ id });
+    reject(new Error('failed'));
+  }),
 }));
 
 describe('GET /', () => {

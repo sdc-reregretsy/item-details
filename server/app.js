@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
-const db = require('../database/index');
+const db = require('../database/methods');
 
 const app = express();
 
@@ -12,9 +12,8 @@ app.use(cors());
 app.use(compression());
 
 app.get('/products/:id', (req, res) => {
-  db.retrieveItem(req.params.id, (response) => {
-    res.send(response);
-  });
+  db.retrieve(req.params.id)
+    .then(response => res.send(response));
 });
 
 module.exports = app;
