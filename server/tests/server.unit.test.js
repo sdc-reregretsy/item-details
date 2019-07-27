@@ -1,7 +1,7 @@
 const request = require('supertest');
-const app = require('./app');
+const app = require('../app');
 
-jest.mock('../database/index', () => ({
+jest.mock('../../database/index', () => ({
   retrieveItem: (id, cb) => cb([{}]),
 }));
 
