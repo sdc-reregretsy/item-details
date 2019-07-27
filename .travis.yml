@@ -1,10 +1,10 @@
 before_script:
   - psql -c 'create database test_reregretsy_database;' -U postgres
   - psql -c 'create table products;' -U postgres
-  - psql -c 'insert into products values
-('1213d10e-b6b5-4d6d-af44-2b10d334ed52','Small Soft Ball',131.00,'http://lorempixel.com/640/480/nature','Colleen Hand','Madaline_Greenholt','https://s3.amazonaws.com/uifaces/faces/twitter/bpartridge/128.jpg'),
-('14914197-1762-4f6e-a424-5d5bebb7695c','Small Fresh Car',855.00,'http://lorempixel.com/640/480/city','Rose Leannon','Kamryn_Hansen9','https://s3.amazonaws.com/uifaces/faces/twitter/hota_v/128.jpg'),
-('06be9a5c-9ea2-4868-9ba2-53989f119d68','Licensed Concrete Tuna',85.00,'http://lorempixel.com/640/480/technics','Vern Skiles','Antonetta_Champlin67','https://s3.amazonaws.com/uifaces/faces/twitter/matkins/128.jpg');'
+#   - psql -c 'insert into products values
+# ('1213d10e-b6b5-4d6d-af44-2b10d334ed52','Small Soft Ball',131.00,'http://lorempixel.com/640/480/nature','Colleen Hand','Madaline_Greenholt','https://s3.amazonaws.com/uifaces/faces/twitter/bpartridge/128.jpg'),
+# ('14914197-1762-4f6e-a424-5d5bebb7695c','Small Fresh Car',855.00,'http://lorempixel.com/640/480/city','Rose Leannon','Kamryn_Hansen9','https://s3.amazonaws.com/uifaces/faces/twitter/hota_v/128.jpg'),
+# ('06be9a5c-9ea2-4868-9ba2-53989f119d68','Licensed Concrete Tuna',85.00,'http://lorempixel.com/640/480/technics','Vern Skiles','Antonetta_Champlin67','https://s3.amazonaws.com/uifaces/faces/twitter/matkins/128.jpg');'
 sudo: false
 language: node_js
 node_js:
