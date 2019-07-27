@@ -4,6 +4,6 @@ node_js:
   - "stable"
 services:
   - postgresql
-script: jest
+script: npm run test
 notifications:
   email: false
