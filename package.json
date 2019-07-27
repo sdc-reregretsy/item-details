@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest",
     "react-dev": "webpack --config ./webpack.config.js --watch",
-    "server-dev": "nodemon server"
+    "server-dev": "nodemon server",
+    "seed":
   },
   "dependencies": {
     "axios": "^0.18.0",
