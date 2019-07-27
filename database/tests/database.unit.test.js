@@ -7,7 +7,7 @@ const mockClient = new Client({
 });
 jest.mock('../index.js', () => mockClient);
 
-const { retrieve } = require('../methods');
+const { connection, retrieve } = require('../methods');
 
 describe('Database helper functions', () => {
   test('should connect to DB', async () => {
