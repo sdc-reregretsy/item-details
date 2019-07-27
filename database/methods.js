@@ -5,7 +5,6 @@ const connection = require('./index');
 })();
 
 const retrieve = id => connection.query(`SELECT * FROM products WHERE id='${id}'`)
-  .then(result => result)
   .then(result => result.rows)
   .catch(console.error);
 
