@@ -1,0 +1,13 @@
+config:
+  target: "http://localhost:3001"
+  phases:
+    - duration: 20
+      arrivalRate: 15
+scenarios:
+  - name: "GET /"
+    flow:
+      - loop:
+        - get:
+            url: "/"
+            gzip: true
+        count: 100
